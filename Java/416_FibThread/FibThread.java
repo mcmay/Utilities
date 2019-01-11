@@ -3,7 +3,8 @@ import java.lang.Iterable;
 
 class FibArray {
 
-	private int[] fibArr;
+	private static int[] fibArr; // this field needs to be declared static
+				     // for it to persist after child thread returns
 	private int len;
 
 	public FibArray (int n) {
@@ -12,6 +13,10 @@ class FibArray {
     }
     public int[] getFibArr() {
 	return fibArr;	
+    }
+    public void showArr() {
+    	for (int r : fibArr)
+		System.out.println(r);
     }
 }
 class FibGenerator implements Runnable {
@@ -36,14 +41,18 @@ class FibGenerator implements Runnable {
       fibArr[1] = 1;
     }
     else{
+	int i = 2;
+      fibArr[0] = 1;
+      fibArr[1] = 1;
       prev = 1;
       cur = 1;
      while (len >= 3) {
       sum = prev + cur;
       prev = cur;
       cur = sum;
+      fibArr[i] = cur;
       len--;
-      fibArr[len] = cur;
+      i++;
      }
     }
    }
@@ -66,10 +75,7 @@ public class FibThread {
 			 		try {
 						thrd.join();
 						System.out.println("The Fibonacci series up to " + argNum + " is:");
-						int[] fibArr = fibs.getFibArr();
-						for (int r : fibArr)
-							System.out.println(r);		
-				
+    						fibs.showArr();
 					} catch (InterruptedException ie) { }
 			}
 		}
