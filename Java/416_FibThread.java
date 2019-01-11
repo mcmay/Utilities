@@ -10,7 +10,7 @@ class FibArray {
         this.fibArr = new int[len];
     }
     public int[] getFibArr() {
-
+	return FibArr;	
     }
 }
 class FibGenerator implements Runnable {
