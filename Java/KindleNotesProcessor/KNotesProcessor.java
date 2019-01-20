@@ -25,10 +25,6 @@ class Record {
     public void setText (String text) {
             this.text = text;
     }
-    /*public void displayRecord ( ) {
-            System.out.println(location);
-            System.out.println(text);
-    }*/
 }
 
 public class KNotesProcessor {
@@ -39,14 +35,29 @@ public class KNotesProcessor {
                 System.err.println("Usage: <program> <parameter>");
         }
         else {
-            Path pathForRead = FileSystems.getDefault().getPath(".", "My Clippings.txt");
+            Path pathForReadRecords = FileSystems.getDefault().getPath(".", "My Clippings.txt");
+            Path pathForReadLocation = FileSystems.getDefault().getPath(".", ("Location_" + args[0] + ".txt"));
             Charset charset = Charset.forName("utf8");
             List <String> strings = new ArrayList<String>();
             String line = null;
-            String dbg = null;
+            String lastRecord = null;
             Record rcd = new Record("noLocation", "noText");
 
-            try(BufferedReader reader = Files.newBufferedReader(pathForRead, charset)){
+            File locFile = new File("Location_" + args[0] + ".txt");
+            boolean fileExists = locFile.exists();
+            if (fileExists) {
+                try(BufferedReader reader = Files.newBufferedReader(pathForReadLocation, charset)) {
+                    while ((line =  reader.readLine()) != null) {
+                        lastRecord = line;
+                    }
+                } catch (IOException x) {
+                    System.err.format("IOException: %s%n", x);
+                }
+            }
+            else {
+                    System.err.println("Location file not found.");
+            }
+            try(BufferedReader reader = Files.newBufferedReader(pathForReadRecords, charset)){
                while ((line = reader.readLine()) != null) {
                    if (line.indexOf(args[0]) != -1) {
                       if ((line = reader.readLine()) != null && line.indexOf("Highlight") != -1) {
@@ -67,13 +78,21 @@ public class KNotesProcessor {
             } catch (IOException x) {
                 System.err.format("IOException: %s%n", x);
               }     
-            Path pathForWrite = FileSystems.getDefault().getPath(".", (args[0] + ".txt"));
-            try (BufferedWriter writer = Files.newBufferedWriter(pathForWrite, charset, StandardOpenOption.CREATE, StandardOpenOption.APPEND)) {
+            Path pathForWriteRecords = FileSystems.getDefault().getPath(".", (args[0] + ".txt"));
+            try (BufferedWriter writer = Files.newBufferedWriter(pathForWriteRecords, charset, StandardOpenOption.CREATE, StandardOpenOption.APPEND)) {
 
                 for (int i = 0; i < strings.size(); i++) {
                     line = strings.get(i);
                     writer.write(line, 0, line.length());
+                    writer.write("\r\n", 0, "\r\n".length());
                 } 
+            } catch (IOException x) {
+                    System.err.format("IOException: %s%n", x);
+            }
+            Path pathForLocation = FileSystems.getDefault().getPath(".", ("Location_" + args[0] + ".txt"));
+            try (BufferedWriter writer = Files.newBufferedWriter(pathForLocation, charset, StandardOpenOption.CREATE, StandardOpenOption.APPEND)) {
+               writer.write(rcd.getLocation()); 
+                writer.write("\r\n", 0, "\r\n".length());
             } catch (IOException x) {
                     System.err.format("IOException: %s%n", x);
             }
