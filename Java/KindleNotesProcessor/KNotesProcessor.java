@@ -3,7 +3,7 @@ import java.io.BufferedReader;
 import java.nio.file.*;
 import java.util.*;
 import java.nio.charset.Charset;
-import java.io.IOException;
+import java.io.*;
 
 class Record {
     private String location;
@@ -25,10 +25,10 @@ class Record {
     public void setText (String text) {
             this.text = text;
     }
-    public void displayRecord ( ) {
+    /*public void displayRecord ( ) {
             System.out.println(location);
             System.out.println(text);
-    }
+    }*/
 }
 
 public class KNotesProcessor {
@@ -39,13 +39,14 @@ public class KNotesProcessor {
                 System.err.println("Usage: <program> <parameter>");
         }
         else {
-            Path path = FileSystems.getDefault().getPath(".", "My Clippings.txt");
+            Path pathForRead = FileSystems.getDefault().getPath(".", "My Clippings.txt");
             Charset charset = Charset.forName("utf8");
+            List <String> strings = new ArrayList<String>();
+            String line = null;
+            String dbg = null;
+            Record rcd = new Record("noLocation", "noText");
 
-            try(BufferedReader reader = Files.newBufferedReader(path, charset)){
-               String line = null;
-               //List<Record> records;
-               Record rcd = new Record("noLocation", "noText");
+            try(BufferedReader reader = Files.newBufferedReader(pathForRead, charset)){
                while ((line = reader.readLine()) != null) {
                    if (line.indexOf(args[0]) != -1) {
                       if ((line = reader.readLine()) != null && line.indexOf("Highlight") != -1) {
@@ -59,13 +60,23 @@ public class KNotesProcessor {
                             if (line == null)
                                 break;
                             rcd.setText(line);
-                            rcd.displayRecord( );
+                            strings.add(rcd.getText());
                         }
                     }
                 } 
             } catch (IOException x) {
-                                System.err.format("IOException: %s%n", x);
+                System.err.format("IOException: %s%n", x);
               }     
+            Path pathForWrite = FileSystems.getDefault().getPath(".", (args[0] + ".txt"));
+            try (BufferedWriter writer = Files.newBufferedWriter(pathForWrite, charset, StandardOpenOption.CREATE, StandardOpenOption.APPEND)) {
+
+                for (int i = 0; i < strings.size(); i++) {
+                    line = strings.get(i);
+                    writer.write(line, 0, line.length());
+                } 
+            } catch (IOException x) {
+                    System.err.format("IOException: %s%n", x);
+            }
         }
     }
 }
