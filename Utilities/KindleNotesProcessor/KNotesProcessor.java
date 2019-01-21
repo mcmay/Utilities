@@ -99,6 +99,14 @@ public class KNotesProcessor {
               }     
             Path pathForWriteRecords = FileSystems.getDefault().getPath(".", (args[0] + ".txt"));
             try (BufferedWriter writer = Files.newBufferedWriter(pathForWriteRecords, charset, StandardOpenOption.CREATE, StandardOpenOption.APPEND)) {
+                GregorianCalendar calendar = new GregorianCalendar();
+                Date date = calendar.getTime();
+                String dateString = date.toString();
+
+                // date the record
+                writer.write("\r\n", 0, "\r\n".length());
+                writer.write(dateString);
+                writer.write("\r\n", 0, "\r\n".length());
 
                 for (int i = 0; i < strings.size(); i++) {
                     line = strings.get(i);
