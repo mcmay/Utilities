@@ -6,6 +6,15 @@ sleepIn(false, true) → true
 */
 
 public class SleepIn {
+	
+	public boolean sleepIn (boolean weekday, boolean vacation) {
+		if (weekday)
+			return false;
+		if (vacation)
+			return true;
+		
+		return false;
+	}
 	public static void main (String[] args) {
 		
 	}
