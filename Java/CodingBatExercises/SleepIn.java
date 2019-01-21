@@ -8,8 +8,8 @@ sleepIn(false, true) → true
 public class SleepIn {
 	
 	public boolean sleepIn (boolean weekday, boolean vacation) {
-		if (weekday)
-			return false;
+		if (!weekday)
+			return true;
 		if (vacation)
 			return true;
 		
