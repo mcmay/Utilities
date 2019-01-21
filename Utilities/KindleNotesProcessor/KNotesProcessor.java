@@ -50,7 +50,7 @@ public class KNotesProcessor {
             if (fileExists) {
                 try(BufferedReader reader = Files.newBufferedReader(pathForReadLocation, charset)) {
                     while ((line =  reader.readLine()) != null) {
-                        lastLocation = line;
+                        lastLocation = line;  // read to the end of file to locate the last location (Loc. of last time)
                     }
                 } catch (IOException x) {
                     System.err.format("IOException: %s%n", x);
@@ -63,14 +63,17 @@ public class KNotesProcessor {
             try(BufferedReader reader = Files.newBufferedReader(pathForReadRecords, charset)){
                while ((line = reader.readLine()) != null) {
                    if (line.indexOf(args[0]) != -1) {
+                        // typical book title line of a record: Mastering Operating System Concepts (10th edition) -- this is a made-up title
                       if ((line = reader.readLine()) != null && line.indexOf("Highlight") != -1) {
+                        // typical type and location line of a record: - Highlight Loc. 2758 | Added on Tuesday, January 15, 2019, 01:25 AM
                            int startIndex, endIndex;
                            // skip the space after the . in Loc.
                             startIndex = line.indexOf("Loc.") + "Loc.".length() + 1;
                             endIndex = line.indexOf('|') - 1; // back-skip the space before |
                             rcd.setLocation(line.substring(startIndex, endIndex));
-			                 if (lastLocation != null && lastLocationFound == false) { // seek the location of the last record of last time
+			                 if (lastLocation != null && lastLocationFound == false) { 
 				                String currentLocation = rcd.getLocation();
+                                // seek the location of the last record of last time
 				                if (currentLocation.equals(lastLocation) == false)
 					               continue;
                                else
@@ -97,6 +100,8 @@ public class KNotesProcessor {
             } catch (IOException x) {
                 System.err.format("IOException: %s%n", x);
               }     
+
+            // Write text section of a suitable record to a txt file
             Path pathForWriteRecords = FileSystems.getDefault().getPath(".", (args[0] + ".txt"));
             try (BufferedWriter writer = Files.newBufferedWriter(pathForWriteRecords, charset, StandardOpenOption.CREATE, StandardOpenOption.APPEND)) {
                 GregorianCalendar calendar = new GregorianCalendar();
@@ -116,6 +121,7 @@ public class KNotesProcessor {
             } catch (IOException x) {
                     System.err.format("IOException: %s%n", x);
             }
+            // Write last location of a particular series of records to a txt file
             Path pathForLocation = FileSystems.getDefault().getPath(".", ("Location_" + args[0] + ".txt"));
             try (BufferedWriter writer = Files.newBufferedWriter(pathForLocation, charset, StandardOpenOption.CREATE, StandardOpenOption.APPEND)) {
                writer.write(rcd.getLocation()); 
