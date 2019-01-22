@@ -10,6 +10,9 @@ class SleepIn {
 			return true;
 		if (vacation)
 			return true;
+		// better solution
+		// if (!weekday || vacation)
+		// return true;
 		
 		return false;
 	}
