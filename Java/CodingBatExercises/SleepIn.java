@@ -4,9 +4,7 @@ sleepIn(false, false) → true
 sleepIn(true, false) → false
 sleepIn(false, true) → true
 */
-
-public class SleepIn {
-	
+class SleepIn {
 	public boolean sleepIn (boolean weekday, boolean vacation) {
 		if (!weekday)
 			return true;
@@ -15,14 +13,20 @@ public class SleepIn {
 		
 		return false;
 	}
+}
+public class Main {
+
 	public static void main (String[] args) {
+	SleepIn slpin = new SleepIn();
 	boolean tof;
 	
-	tof = sleepIn(false, false);
+	tof = slpin.sleepIn(false, false);
 	System.out.println(tof);
-	tof = sleepIn(true, false);
+	tof = slpin.sleepIn(true, false);
 	System.out.println(tof);
-	tof = sleepIn(false, true)
+	tof = slpin.sleepIn(false, true);
+    System.out.println(tof);
+	tof = slpin.sleepIn(true, true);
     System.out.println(tof);
 	}
 }
