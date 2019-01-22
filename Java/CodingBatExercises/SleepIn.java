@@ -16,6 +16,13 @@ public class SleepIn {
 		return false;
 	}
 	public static void main (String[] args) {
-		
+	boolean tof;
+	
+	tof = sleepIn(false, false);
+	System.out.println(tof);
+	tof = sleepIn(true, false);
+	System.out.println(tof);
+	tof = sleepIn(false, true)
+    System.out.println(tof);
 	}
 }
