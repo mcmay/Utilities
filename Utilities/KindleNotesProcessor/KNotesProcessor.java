@@ -115,6 +115,8 @@ public class KNotesProcessor {
 
                 for (int i = 0; i < strings.size(); i++) {
                     line = strings.get(i);
+
+                    writer.write("\r\n", 0, "\r\n".length());
                     writer.write(line, 0, line.length());
                     writer.write("\r\n", 0, "\r\n".length());
                 } 

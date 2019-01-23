@@ -1,0 +1,23 @@
+
+Mon Jan 21 14:55:38 AEDT 2019
+A process is more than the program code, which is sometimes known as the text section. It also includes the current activity, as represented by the value of the program counter and the contents of the processor’s registers. A process generally also includes the process stack, which contains temporary data (such as function parameters, return addresses, and local variables), and a data section, which contains global variables. A process may also include a heap, which is memory that is dynamically allocated during process run time.
+3.1.2 Process State
+Each process may be in one of the following states: • New. The process is being created. • Running. Instructions are being executed. • Waiting. The process is waiting for some event to occur (such as an I/O completion or reception of a signal). • Ready. The process is waiting to be assigned to a processor. • Terminated. The process has finished execution.
+It is important to realize that only one process can be running on any processor at any instant.
+CHAPTER 2 Operating System Structures
+It is important that the goals of the system be well defined before the design begins.
+One view focuses on the services that the system provides; another, on the interface that it makes available to users and programmers; a third, on its components and their interconnections.
+CHAPTER OBJECTIVES • To describe the services an operating system provides to users, processes, and other systems. • To discuss the various ways of structuring an operating system. • To explain how operating systems are installed and customized and how they boot.
+2.1 Operating-System Services
+Figure 2.1 A view of operating system services.
+• User interface.
+One is a DTrace command-line interface (CLI),
+batch interface,
+graphical user interface (GUI)
+• Program execution.
+• I/O operations.
+• File-system manipulation.
+• Communications.
+• Error detection.
+Another set of operating-system functions exists not for helping the user but rather for ensuring the efficient operation of the system itself.
+• Resource allocation.

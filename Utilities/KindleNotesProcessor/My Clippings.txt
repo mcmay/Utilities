@@ -319,6 +319,11 @@ Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstman
 
 ==========
 Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1716 | Added on Monday, January 21, 2019, 12:31 PM
+
+• Resource allocation.
+==========
+Operating System Concepts (Greg Gagne)
 - Highlight Loc. 1714-15 | Added on Monday, January 21, 2019, 12:32 PM
 
 Another set of operating-system functions exists not for helping the user but rather for ensuring the efficient operation of the system itself.
@@ -327,4 +332,109 @@ Operating System Concepts (Greg Gagne)
 - Highlight Loc. 1716 | Added on Monday, January 21, 2019, 12:32 PM
 
 • Resource allocation.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1198 | Added on Tuesday, January 22, 2019, 07:34 PM
+
+2.3.1. Troubleshooting Hints
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1229-30 | Added on Tuesday, January 22, 2019, 09:36 PM
+
+2.4. Using an Integrated Development Environment
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1252 | Added on Tuesday, January 22, 2019, 09:42 PM
+
+2.4.1. Locating Compilation Errors
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1265 | Added on Tuesday, January 22, 2019, 09:43 PM
+
+2.5. Running a Graphical Application
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1313 | Added on Wednesday, January 23, 2019, 01:25 AM
+
+2.6. Building and Running Applets
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1315-16 | Added on Wednesday, January 23, 2019, 01:26 AM
+
+most of the early hype about Java came from its ability to run applets inside a web browser.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1385-86 | Added on Wednesday, January 23, 2019, 01:32 AM
+
+Chapter 3. Fundamental Programming Structures in Java
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1405 | Added on Wednesday, January 23, 2019, 09:38 AM
+
+3.1. A Simple Java Program
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1413 | Added on Wednesday, January 23, 2019, 09:40 AM
+
+access modifier;
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1413-14 | Added on Wednesday, January 23, 2019, 09:41 AM
+
+access modifier; these modifiers control the level of access other parts of a program have to this code.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1418-19 | Added on Wednesday, January 23, 2019, 09:42 AM
+
+Names must begin with a letter, and after that, they can have any combination of letters and digits.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1423-24 | Added on Wednesday, January 23, 2019, 09:50 AM
+
+You need to make the file name for the source code the same as the name of the public class,
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1448-50 | Added on Wednesday, January 23, 2019, 10:36 AM
+
+it is remarkable that Sun made the bug reports and their resolutions available for anyone to scrutinize, long before Java was open source. The “bug parade” is a very useful resource for programmers.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1468-70 | Added on Wednesday, January 23, 2019, 10:40 AM
+
+If the main method exits normally, the Java program has the exit code 0, indicating successful completion. To terminate the program with a different exit code, use the System.exit method.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1485-86 | Added on Wednesday, January 23, 2019, 10:48 AM
+
+a variant of the println method with no parameters just prints a blank line. You invoke it with the call System.out.println();
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1488-89 | Added on Wednesday, January 23, 2019, 10:49 AM
+
+System.out also has a print method that doesn’t add a newline character to the output.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1490-91 | Added on Wednesday, January 23, 2019, 10:49 AM
+
+3.2. Comments
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1496-97 | Added on Wednesday, January 23, 2019, 10:50 AM
+
+a third kind of comment can be used to generate documentation automatically. This comment uses a /** to start and a */ to end.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1509 | Added on Wednesday, January 23, 2019, 10:51 AM
+
+3.3. Data Types
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1510-11 | Added on Wednesday, January 23, 2019, 10:52 AM
+
+There are eight primitive types in Java.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1517 | Added on Wednesday, January 23, 2019, 10:53 AM
+
+3.3.1. Integer Types
 ==========
