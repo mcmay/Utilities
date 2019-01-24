@@ -8,7 +8,7 @@ sumDouble(2, 2) → 8
 */
 public class SumDouble {
     public static int sumDouble(int a,  int b) {
-        return a == b? (a + b) : (a + b) * 2;
+        return a == b? (a + b) * 2 : (a + b);
     }
     
    public static void main (String[] args) {
