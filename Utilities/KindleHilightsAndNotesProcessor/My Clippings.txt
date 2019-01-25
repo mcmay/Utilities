@@ -1,0 +1,1285 @@
+﻿2666 (Reberto Bolano)
+- Bookmark Loc. 3434 | Added on Saturday, September 22, 2018, 09:29 AM
+
+
+==========
+Operating System Concepts (Greg Gagne)
+- Bookmark Loc. 426 | Added on Wednesday, November 07, 2018, 07:52 AM
+
+
+==========
+Operating System Concepts (Greg Gagne)
+- Bookmark Loc. 2582 | Added on Wednesday, November 28, 2018, 11:10 AM
+
+
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Bookmark Loc. 329 | Added on Tuesday, December 11, 2018, 10:51 AM
+
+
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Bookmark Loc. 2850 | Added on Sunday, December 23, 2018, 04:34 PM
+
+
+==========
+Operating System Concepts (Greg Gagne)
+- Bookmark Loc. 3310 | Added on Saturday, January 12, 2019, 04:52 PM
+
+
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 2743-47 | Added on Monday, January 14, 2019, 11:53 AM
+
+A process is more than the program code, which is sometimes known as the text section. It also includes the current activity, as represented by the value of the program counter and the contents of the processor’s registers. A process generally also includes the process stack, which contains temporary data (such as function parameters, return addresses, and local variables), and a data section, which contains global variables. A process may also include a heap, which is memory that is dynamically allocated during process run time.
+==========
+Operating System Concepts (Greg Gagne)
+- Note Loc. 2747 | Added on Monday, January 14, 2019, 11:57 AM
+
+3.1.1 The Process
+==========
+Operating System Concepts (Greg Gagne)
+- Bookmark Loc. 2746 | Added on Tuesday, January 15, 2019, 01:15 AM
+
+
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 2758 | Added on Tuesday, January 15, 2019, 01:25 AM
+
+3.1.2 Process State
+==========
+Operating System Concepts (Greg Gagne)
+- Note Loc. 2758 | Added on Tuesday, January 15, 2019, 01:26 AM
+
+3.1.2 Process State
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 2760-65 | Added on Tuesday, January 15, 2019, 01:28 AM
+
+Each process may be in one of the following states: • New. The process is being created. • Running. Instructions are being executed. • Waiting. The process is waiting for some event to occur (such as an I/O completion or reception of a signal). • Ready. The process is waiting to be assigned to a processor. • Terminated. The process has finished execution.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 2767-68 | Added on Tuesday, January 15, 2019, 01:32 AM
+
+It is important to realize that only one process can be running on any processor at any instant.
+==========
+Operating System Concepts (Greg Gagne)
+- Note Loc. 2767 | Added on Tuesday, January 15, 2019, 01:34 AM
+
+One process per thread 
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1649-50 | Added on Tuesday, January 15, 2019, 09:29 AM
+
+CHAPTER 2 Operating System Structures
+==========
+Operating System Concepts (Greg Gagne)
+- Note Loc. 1650 | Added on Tuesday, January 15, 2019, 09:32 AM
+
+Ch2
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1670-71 | Added on Tuesday, January 15, 2019, 09:33 AM
+
+It is important that the goals of the system be well defined before the design begins.
+==========
+Operating System Concepts (Greg Gagne)
+- Note Loc. 1671 | Added on Tuesday, January 15, 2019, 09:34 AM
+
+Goals are important
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1672-74 | Added on Tuesday, January 15, 2019, 09:42 AM
+
+One view focuses on the services that the system provides; another, on the interface that it makes available to users and programmers; a third, on its components and their interconnections.
+==========
+Operating System Concepts (Greg Gagne)
+- Note Loc. 1674 | Added on Tuesday, January 15, 2019, 09:42 AM
+
+Vantage points to look at an operating system
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1677-81 | Added on Tuesday, January 15, 2019, 09:44 AM
+
+CHAPTER OBJECTIVES • To describe the services an operating system provides to users, processes, and other systems. • To discuss the various ways of structuring an operating system. • To explain how operating systems are installed and customized and how they boot.
+==========
+Operating System Concepts (Greg Gagne)
+- Note Loc. 1681 | Added on Tuesday, January 15, 2019, 09:45 AM
+
+Chapter objs
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1682 | Added on Tuesday, January 15, 2019, 09:53 AM
+
+2.1 Operating-System Services
+==========
+Operating System Concepts (Greg Gagne)
+- Note Loc. 1681 | Added on Tuesday, January 15, 2019, 09:54 AM
+
+2..1
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1687-88 | Added on Tuesday, January 15, 2019, 09:58 AM
+
+Figure 2.1 A view of operating system services.
+==========
+Operating System Concepts (Greg Gagne)
+- Note Loc. 1688 | Added on Tuesday, January 15, 2019, 09:59 AM
+
+Fig2.1
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1690 | Added on Tuesday, January 15, 2019, 11:27 AM
+
+• User interface.
+==========
+Operating System Concepts (Greg Gagne)
+- Note Loc. 1690 | Added on Tuesday, January 15, 2019, 11:28 AM
+
+OS services
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1691 | Added on Tuesday, January 15, 2019, 11:29 AM
+
+One is a DTrace command-line interface (CLI),
+==========
+Operating System Concepts (Greg Gagne)
+- Note Loc. 1691 | Added on Tuesday, January 15, 2019, 11:29 AM
+
+CLI
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1692 | Added on Tuesday, January 15, 2019, 11:29 AM
+
+batch interface,
+==========
+Operating System Concepts (Greg Gagne)
+- Note Loc. 1692 | Added on Tuesday, January 15, 2019, 11:29 AM
+
+batch
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1693 | Added on Tuesday, January 15, 2019, 11:30 AM
+
+graphical user interface (GUI)
+==========
+Operating System Concepts (Greg Gagne)
+- Note Loc. 1693 | Added on Tuesday, January 15, 2019, 11:30 AM
+
+GUI
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1695 | Added on Tuesday, January 15, 2019, 11:31 AM
+
+• Program execution.
+==========
+Operating System Concepts (Greg Gagne)
+- Note Loc. 1695 | Added on Tuesday, January 15, 2019, 11:31 AM
+
+Prog exec 
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1697 | Added on Tuesday, January 15, 2019, 11:32 AM
+
+• I/O operations.
+==========
+Operating System Concepts (Greg Gagne)
+- Note Loc. 1697 | Added on Tuesday, January 15, 2019, 11:32 AM
+
+I/O
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1700 | Added on Tuesday, January 15, 2019, 11:32 AM
+
+• File-system manipulation.
+==========
+Operating System Concepts (Greg Gagne)
+- Note Loc. 1700 | Added on Tuesday, January 15, 2019, 11:32 AM
+
+FS management
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1704 | Added on Tuesday, January 15, 2019, 11:35 AM
+
+• Communications.
+==========
+Operating System Concepts (Greg Gagne)
+- Note Loc. 1704 | Added on Tuesday, January 15, 2019, 11:35 AM
+
+Comm
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1708 | Added on Tuesday, January 15, 2019, 11:36 AM
+
+• Error detection.
+==========
+Operating System Concepts (Greg Gagne)
+- Note Loc. 1708 | Added on Tuesday, January 15, 2019, 11:36 AM
+
+Err detect
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 4758 | Added on Friday, January 18, 2019, 01:49 AM
+
+inheritance chain.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 4757 | Added on Friday, January 18, 2019, 01:49 AM
+
+inheritance hierarchy,
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 4768 | Added on Friday, January 18, 2019, 01:50 AM
+
+“is–a” rule
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 4771 | Added on Friday, January 18, 2019, 01:51 AM
+
+substitution principle.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 4771 | Added on Friday, January 18, 2019, 01:52 AM
+
+substitution principle. That principle states that you can use a subclass object whenever the program expects a superclass object.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 4775 | Added on Friday, January 18, 2019, 01:53 AM
+
+object variables are polymorphic.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 4780-81 | Added on Friday, January 18, 2019, 01:55 AM
+
+In this case, the variables staff[0] and boss refer to the same object. However, staff[0] is considered to be only an Employee object by the compiler.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 4791-92 | Added on Friday, January 18, 2019, 01:56 AM
+
+arrays of subclass references can be converted to arrays of superclass references without a cast.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 4806-7 | Added on Friday, January 18, 2019, 01:58 AM
+
+To make sure no such corruption can occur, all arrays remember the element type with which they were created, and they monitor that only compatible references are stored into them.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 4819 | Added on Friday, January 18, 2019, 02:00 AM
+
+overloading resolution.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 4827-28 | Added on Friday, January 18, 2019, 02:02 AM
+
+If you define a method in a subclass that has the same signature as a superclass method, then you override that method.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 4829-30 | Added on Friday, January 18, 2019, 02:04 AM
+
+when you override a method, you need to keep the return type compatible. A subclass may change the return type to a subtype of the original type.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 4837 | Added on Friday, January 18, 2019, 02:05 AM
+
+covariant return types.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 4839 | Added on Friday, January 18, 2019, 02:06 AM
+
+static binding.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 4838-39 | Added on Friday, January 18, 2019, 02:07 AM
+
+the method is private, static, final, or a constructor, then the compiler knows exactly which method to call.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 4842-43 | Added on Friday, January 18, 2019, 02:08 AM
+
+When the program runs and uses dynamic binding to call a method, then the virtual machine must call the version of the method that is appropriate for the actual type of the object to which x refers.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 4846-47 | Added on Friday, January 18, 2019, 02:10 AM
+
+the virtual machine precomputes for each class a method table that lists all method signatures and the actual methods to be called.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 4872 | Added on Friday, January 18, 2019, 02:15 AM
+
+Dynamic binding has a very important property: It makes programs extensible without the need for modifying existing code.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 4877-78 | Added on Friday, January 18, 2019, 02:16 AM
+
+When you override a method, the subclass method must be at least as visible as the superclass method. In particular, if the superclass method is public, then the subclass method must also be declared as public.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Bookmark Loc. 4714 | Added on Saturday, January 19, 2019, 01:09 AM
+
+
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1716 | Added on Monday, January 21, 2019, 12:31 PM
+
+• Resource allocation.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1714-15 | Added on Monday, January 21, 2019, 12:32 PM
+
+Another set of operating-system functions exists not for helping the user but rather for ensuring the efficient operation of the system itself.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1716 | Added on Monday, January 21, 2019, 12:32 PM
+
+• Resource allocation.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1198 | Added on Tuesday, January 22, 2019, 07:34 PM
+
+2.3.1. Troubleshooting Hints
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1229-30 | Added on Tuesday, January 22, 2019, 09:36 PM
+
+2.4. Using an Integrated Development Environment
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1252 | Added on Tuesday, January 22, 2019, 09:42 PM
+
+2.4.1. Locating Compilation Errors
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1265 | Added on Tuesday, January 22, 2019, 09:43 PM
+
+2.5. Running a Graphical Application
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1313 | Added on Wednesday, January 23, 2019, 01:25 AM
+
+2.6. Building and Running Applets
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1315-16 | Added on Wednesday, January 23, 2019, 01:26 AM
+
+most of the early hype about Java came from its ability to run applets inside a web browser.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1385-86 | Added on Wednesday, January 23, 2019, 01:32 AM
+
+Chapter 3. Fundamental Programming Structures in Java
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1405 | Added on Wednesday, January 23, 2019, 09:38 AM
+
+3.1. A Simple Java Program
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1413 | Added on Wednesday, January 23, 2019, 09:40 AM
+
+access modifier;
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1413-14 | Added on Wednesday, January 23, 2019, 09:41 AM
+
+access modifier; these modifiers control the level of access other parts of a program have to this code.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1418-19 | Added on Wednesday, January 23, 2019, 09:42 AM
+
+Names must begin with a letter, and after that, they can have any combination of letters and digits.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1423-24 | Added on Wednesday, January 23, 2019, 09:50 AM
+
+You need to make the file name for the source code the same as the name of the public class,
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1448-50 | Added on Wednesday, January 23, 2019, 10:36 AM
+
+it is remarkable that Sun made the bug reports and their resolutions available for anyone to scrutinize, long before Java was open source. The “bug parade” is a very useful resource for programmers.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1468-70 | Added on Wednesday, January 23, 2019, 10:40 AM
+
+If the main method exits normally, the Java program has the exit code 0, indicating successful completion. To terminate the program with a different exit code, use the System.exit method.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1485-86 | Added on Wednesday, January 23, 2019, 10:48 AM
+
+a variant of the println method with no parameters just prints a blank line. You invoke it with the call System.out.println();
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1488-89 | Added on Wednesday, January 23, 2019, 10:49 AM
+
+System.out also has a print method that doesn’t add a newline character to the output.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1490-91 | Added on Wednesday, January 23, 2019, 10:49 AM
+
+3.2. Comments
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1496-97 | Added on Wednesday, January 23, 2019, 10:50 AM
+
+a third kind of comment can be used to generate documentation automatically. This comment uses a /** to start and a */ to end.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1509 | Added on Wednesday, January 23, 2019, 10:51 AM
+
+3.3. Data Types
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1510-11 | Added on Wednesday, January 23, 2019, 10:52 AM
+
+There are eight primitive types in Java.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1517 | Added on Wednesday, January 23, 2019, 10:53 AM
+
+3.3.1. Integer Types
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1520-21 | Added on Wednesday, January 23, 2019, 01:08 PM
+
+In most situations, the int type is the most practical.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1521-23 | Added on Wednesday, January 23, 2019, 01:11 PM
+
+The byte and short types are mainly intended for specialized applications, such as low-level file handling, or for large arrays when storage space is at a premium.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1523-24 | Added on Wednesday, January 23, 2019, 01:22 PM
+
+Under Java, the ranges of the integer types do not depend on the machine on which you will be running the Java code.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1527-29 | Added on Wednesday, January 23, 2019, 01:34 PM
+
+Long integer numbers have a suffix L (for example, 4000000000L). Hexadecimal numbers have a prefix 0x (for example, 0xCAFE). Octal numbers have a prefix 0. For example, 010 is 8.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1530 | Added on Wednesday, January 23, 2019, 01:53 PM
+
+Starting with Java 7, you can write numbers in binary, with a prefix 0b.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1530-32 | Added on Wednesday, January 23, 2019, 01:54 PM
+
+Also starting with Java 7, you can add underscores to number literals, such as 1_000_000 (or 0b1111_0100_0010_0100_0000) to denote one million. The underscores are for human eyes only. The Java compiler simply removes them.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1538-39 | Added on Wednesday, January 23, 2019, 02:42 PM
+
+Note that Java does not have any unsigned types.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1539-40 | Added on Wednesday, January 23, 2019, 03:54 PM
+
+3.3.2. Floating-Point Types
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1544 | Added on Wednesday, January 23, 2019, 03:55 PM
+
+Here, the type to choose in most applications is double.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1547-49 | Added on Wednesday, January 23, 2019, 03:56 PM
+
+Numbers of type float have a suffix F (for example, 3.14F). Floating-point numbers without an F suffix (such as 3.14) are always considered to be of type double. You can optionally supply the D suffix (for example, 3.14D).
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1551-53 | Added on Wednesday, January 23, 2019, 03:56 PM
+
+You can specify floating-point literals in hexadecimal. For example, 0.125 = 2–3 can be written as 0x1.0p-3. In hexadecimal notation, you use a p, not an e, to denote the exponent.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1553-54 | Added on Wednesday, January 23, 2019, 03:57 PM
+
+Note that the mantissa is written in hexadecimal and the exponent in decimal. The base of the exponent is 2, not 10.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1555-59 | Added on Wednesday, January 23, 2019, 04:00 PM
+
+In particular, there are three special floating-point values to denote overflows and errors: • Positive infinity • Negative infinity • NaN (not a number) For example, the result of dividing a positive number by 0 is positive infinity. Computing 0/0 or the square root of a negative number yields NaN.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1561-63 | Added on Wednesday, January 23, 2019, 04:00 PM
+
+The constants Double.POSITIVE_INFINITY, Double.NEGATIVE_INFINITY, and Double.NaN (as well as corresponding Float constants) represent these special values,
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1566-68 | Added on Wednesday, January 23, 2019, 04:01 PM
+
+the Double.isNaN method: if (Double.isNaN(x)) // check whether x is "not a number"
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1571-72 | Added on Wednesday, January 23, 2019, 04:03 PM
+
+Floating-point numbers are not suitable for financial calculations in which roundoff errors cannot be tolerated.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1574-75 | Added on Wednesday, January 23, 2019, 04:04 PM
+
+If you need precise numerical computations without roundoff errors, use the BigDecimal class,
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1576 | Added on Wednesday, January 23, 2019, 04:04 PM
+
+3.3.3. The char Type
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1576-77 | Added on Wednesday, January 23, 2019, 04:05 PM
+
+3.3.3. The char Type The char type is used to describe individual characters. Most commonly, these will be character constants.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1578-79 | Added on Wednesday, January 23, 2019, 04:05 PM
+
+Unicode code units can be expressed as hexadecimal values that run from \u0000 to \uFFFF.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1580 | Added on Wednesday, January 23, 2019, 04:06 PM
+
+the \u escape sequences
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1581-83 | Added on Wednesday, January 23, 2019, 04:08 PM
+
+there are several escape sequences for special characters, as shown in Table 3.3. You can use these escape sequences inside quoted character constants and strings, such as '\u2122' or "Hello\n". The \u escape sequence (but none of the other escape sequences) can even be used outside quoted character constants and strings.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1599-1603 | Added on Wednesday, January 23, 2019, 04:18 PM
+
+A code point is a code value that is associated with a character in an encoding scheme. In the Unicode standard, code points are written in hexadecimal and prefixed with U+, such as U+0041 for the code point of the Latin letter A. Unicode has code points that are grouped into 17 code planes. The first code plane, called the basic multilingual plane, consists of the “classic” Unicode characters with code points U+0000 to U+FFFF. Sixteen additional planes, with code points U+10000 to U+10FFFF, hold the supplementary characters.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1599 | Added on Wednesday, January 23, 2019, 04:20 PM
+
+A code point is a code value that is associated with a character in an encoding scheme.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1599-1600 | Added on Wednesday, January 23, 2019, 04:21 PM
+
+In the Unicode standard, code points are written in hexadecimal and prefixed with U+, such as U+0041 for the code point of the Latin letter A.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1599-1603 | Added on Wednesday, January 23, 2019, 04:22 PM
+
+A code point is a code value that is associated with a character in an encoding scheme. In the Unicode standard, code points are written in hexadecimal and prefixed with U+, such as U+0041 for the code point of the Latin letter A. Unicode has code points that are grouped into 17 code planes. The first code plane, called the basic multilingual plane, consists of the “classic” Unicode characters with code points U+0000 to U+FFFF. Sixteen additional planes, with code points U+10000 to U+10FFFF, hold the supplementary characters.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1603-7 | Added on Wednesday, January 23, 2019, 04:24 PM
+
+The UTF-16 encoding represents all Unicode code points in a variable-length code. The characters in the basic multilingual plane are represented as 16-bit values, called code units. The supplementary characters are encoded as consecutive pairs of code units. Each of the values in such an encoding pair falls into a range of 2048 unused values of the basic multilingual plane, called the surrogates area (U+D800 to U+DBFF for the first code unit, U+DC00 to U+DFFF for the second code unit).
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1610-14 | Added on Wednesday, January 23, 2019, 04:35 PM
+
+In Java, the char type describes a code unit in the UTF-16 encoding. Our strong recommendation is not to use the char type in your programs unless you are actually manipulating UTF-16 code units. You are almost always better off treating strings (which we will discuss in Section 3.6, “Strings,” on p. 64) as abstract data types. 3.3.4. The boolean Type
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1615-16 | Added on Wednesday, January 23, 2019, 04:36 PM
+
+You cannot convert between integers and boolean values.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1624-25 | Added on Wednesday, January 23, 2019, 04:37 PM
+
+3.4. Variables
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1630-31 | Added on Wednesday, January 23, 2019, 04:39 PM
+
+Note that the terms “letter” and “digit” are much broader in Java than in most languages. A letter is defined as 'A'–'Z', 'a'–'z', '_', '$', or any Unicode character that denotes a letter in a language.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1636-38 | Added on Wednesday, January 23, 2019, 04:41 PM
+
+If you are really curious as to what Unicode characters are “letters” as far as Java is concerned, you can use the isJavaIdentifierStart and isJavaIdentifierPart methods in the Character class to check.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1640-41 | Added on Wednesday, January 23, 2019, 04:42 PM
+
+Even though $ is a valid Java letter, you should not use it in your own code. It is intended for names that are generated by the Java compiler and other tools.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1656 | Added on Wednesday, January 23, 2019, 04:44 PM
+
+3.4.1. Initializing Variables
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1664-65 | Added on Wednesday, January 23, 2019, 04:44 PM
+
+in Java you can put declarations anywhere in your code.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1668-69 | Added on Wednesday, January 23, 2019, 04:45 PM
+
+In Java, it is considered good style to declare variables as closely as possible to the point where they are first used.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1677-78 | Added on Wednesday, January 23, 2019, 04:46 PM
+
+3.4.2. Constants In Java, you use the keyword final to denote a constant.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1686-87 | Added on Wednesday, January 23, 2019, 04:47 PM
+
+class constants. Set up a class constant with the keywords static final.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1698-99 | Added on Wednesday, January 23, 2019, 07:32 PM
+
+3.5. Operators
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1702-3 | Added on Wednesday, January 23, 2019, 07:33 PM
+
+Note that integer division by 0 raises an exception, whereas floating-point division by 0 yields an infinite or NaN result.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1721-22 | Added on Wednesday, January 23, 2019, 07:36 PM
+
+methods tagged with the strictfp keyword must use strict floating-point operations that yield reproducible results.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1721-28 | Added on Wednesday, January 23, 2019, 07:37 PM
+
+methods tagged with the strictfp keyword must use strict floating-point operations that yield reproducible results. For example, you can tag main as public static strictfp void main(String[] args) Then all instructions inside the main method will use strict floating-point computations. If you tag a class as strictfp, then all of its methods must use strict floating-point computations.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1735 | Added on Wednesday, January 23, 2019, 11:56 PM
+
+3.5.1. Increment and Decrement Operators
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1749 | Added on Wednesday, January 23, 2019, 11:59 PM
+
+3.5.2. Relational and boolean Operators
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1773-74 | Added on Thursday, January 24, 2019, 12:04 AM
+
+3.5.3. Bitwise Operators
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1788-90 | Added on Thursday, January 24, 2019, 12:09 AM
+
+a >>> operator fills the top bits with zero, unlike >> which extends the sign bit into the top bits. There is no <<< operator.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1792-93 | Added on Thursday, January 24, 2019, 12:11 AM
+
+The right-hand side argument of the shift operators is reduced modulo 32 (unless the left-hand side is a long, in which case the right-hand side is reduced modulo 64). For example, the value of 1 << 35 is the same as 1 << 3 or 8.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1799 | Added on Thursday, January 24, 2019, 12:12 AM
+
+3.5.4. Mathematical Functions and Constants
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1820-22 | Added on Thursday, January 24, 2019, 12:15 AM
+
+You can avoid the Math prefix for the mathematical methods and constants by adding the following line to the top of your source file: import static java.lang.Math.*;
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1830-32 | Added on Thursday, January 24, 2019, 12:56 AM
+
+If completely predictable results are more important than fast performance, use the StrictMath class instead. It implements the algorithms from the “Freely Distributable Math Library” fdlibm, guaranteeing identical results on all platforms.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1834-35 | Added on Thursday, January 24, 2019, 12:56 AM
+
+3.5.5. Conversions between Numeric Types
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1837 | Added on Thursday, January 24, 2019, 12:57 AM
+
+Figure 3.1. Legal conversions between numeric types
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1842-49 | Added on Thursday, January 24, 2019, 01:02 AM
+
+When two values are combined with a binary operator (such as n + f where n is an integer and f is a floating-point value), both operands are converted to a common type before the operation is carried out. • If either of the operands is of type double, the other one will be converted to a double. • Otherwise, if either of the operands is of type float, the other one will be converted to a float. • Otherwise, if either of the operands is of type long, the other one will be converted to a long. • Otherwise, both operands will be converted to an int.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1849 | Added on Thursday, January 24, 2019, 01:02 AM
+
+3.5.6. Casts
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1855-57 | Added on Thursday, January 24, 2019, 01:04 AM
+
+If you want to round a floating-point number to the nearest integer (which in most cases is the more useful operation), use the Math.round method: double x = 9.997; int nx = (int) Math.round(x);
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1858-59 | Added on Thursday, January 24, 2019, 01:05 AM
+
+You still need to use the cast (int) when you call round.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1862-64 | Added on Thursday, January 24, 2019, 01:06 AM
+
+If you try to cast a number of one type to another that is out of the range for the target type, the result will be a truncated number that has a different value. For example, (byte) 300 is actually 44.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1721-22 | Added on Thursday, January 24, 2019, 01:09 AM
+
+• Accounting.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1724 | Added on Thursday, January 24, 2019, 01:10 AM
+
+•
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1731 | Added on Thursday, January 24, 2019, 01:13 AM
+
+2.2 User Operating-System Interface
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1716-17 | Added on Thursday, January 24, 2019, 01:14 AM
+
+When there are multiple users or multiple jobs running at the same time, resources must be allocated to each of them.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1733 | Added on Thursday, January 24, 2019, 01:15 AM
+
+two fundamental approaches. One provides a command-line interface, or command interpreter,
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1734-35 | Added on Thursday, January 24, 2019, 01:16 AM
+
+The other allows users to interface with the operating system via a graphical user interface, or GUI.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1735 | Added on Thursday, January 24, 2019, 01:16 AM
+
+2.2.1 Command Interpreter
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1736 | Added on Thursday, January 24, 2019, 01:17 AM
+
+the command interpreter in the kernel.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1737-38 | Added on Thursday, January 24, 2019, 01:17 AM
+
+the command interpreter as a special program that is running when a job is initiated or when a user first logs on (on interactive systems).
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1738 | Added on Thursday, January 24, 2019, 01:18 AM
+
+shells.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1742-43 | Added on Thursday, January 24, 2019, 01:20 AM
+
+The main function of the command interpreter is to get and execute the next user-specified command.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1744 | Added on Thursday, January 24, 2019, 01:21 AM
+
+These commands can be implemented in two general ways.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1745-46 | Added on Thursday, January 24, 2019, 01:21 AM
+
+In one approach, the command interpreter itself contains the code to execute the command.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1748-49 | Added on Thursday, January 24, 2019, 01:22 AM
+
+An alternative approach—used by UNIX, among other operating systems —implements most commands through system programs.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1757-58 | Added on Thursday, January 24, 2019, 08:45 AM
+
+A second strategy for interfacing with the operating system is through a user-friendly graphical user interface, or GUI.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1785-87 | Added on Thursday, January 24, 2019, 08:53 AM
+
+2.3 System Calls System calls provide an interface to the services made available by an operating system.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1789-90 | Added on Thursday, January 24, 2019, 08:58 AM
+
+an example to illustrate how system calls are used: writing a simple program to read data from one file and copy them to another file.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1813-14 | Added on Thursday, January 24, 2019, 09:03 AM
+
+Typically, application developers design programs according to an application programming interface (API).
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1815-16 | Added on Thursday, January 24, 2019, 09:04 AM
+
+Three of the most common APIs available to application programmers
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1817-18 | Added on Thursday, January 24, 2019, 09:04 AM
+
+system-call names used throughout this text are generic examples.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1825-26 | Added on Thursday, January 24, 2019, 09:07 AM
+
+there often exists a strong correlation between a function in the API and its associated system call within the kernel.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1828-30 | Added on Thursday, January 24, 2019, 09:07 AM
+
+As an example of a standard API, consider the ReadFile() function in the Win32 API—a function for reading from a file. The API for this function appears in Figure 2.5.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1838-39 | Added on Thursday, January 24, 2019, 09:11 AM
+
+The run-time support system
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1839 | Added on Thursday, January 24, 2019, 09:12 AM
+
+a system-call interface
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1840-41 | Added on Thursday, January 24, 2019, 09:14 AM
+
+The system-call interface intercepts function calls in the API and invokes the necessary system calls within the operating system.
+==========
+Operating System Concepts (Greg Gagne)
+- Note Loc. 1841 | Added on Thursday, January 24, 2019, 09:16 AM
+
+How does sys-call interace work?
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1841-42 | Added on Thursday, January 24, 2019, 09:45 AM
+
+Typically, a number is associated with each system call, and the system-call interface maintains a table indexed according to these numbers.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1846-48 | Added on Thursday, January 24, 2019, 11:22 AM
+
+The relationship between an API, the system-call interface, and the operating system is shown in Figure 2.6, which illustrates how the operating system handles a user application invoking the open() system call.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1854-55 | Added on Thursday, January 24, 2019, 11:25 AM
+
+Three general methods are used to pass parameters to the operating system.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1855 | Added on Thursday, January 24, 2019, 11:25 AM
+
+in registers.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1856 | Added on Thursday, January 24, 2019, 11:26 AM
+
+in a block,
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1858 | Added on Thursday, January 24, 2019, 11:26 AM
+
+onto the stack
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1860-62 | Added on Thursday, January 24, 2019, 11:27 AM
+
+2.4 Types of System Calls System calls can be grouped roughly into six major categories: process control, file manipulation, device manipulation, information maintenance, communications, and protection.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1867 | Added on Thursday, January 24, 2019, 11:29 AM
+
+2.4.1 Process Control
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1868 | Added on Thursday, January 24, 2019, 11:33 AM
+
+A running program needs to be able to halt its execution either normally (end) or abnormally (abort).
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1871-72 | Added on Thursday, January 24, 2019, 11:34 AM
+
+Under either normal or abnormal circumstances, the operating system must transfer control to the invoking command interpreter. The command interpreter then reads the next command.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1874 | Added on Thursday, January 24, 2019, 11:34 AM
+
+In a batch system,
+==========
+Operating System Concepts (Greg Gagne)
+- Note Loc. 1874 | Added on Thursday, January 24, 2019, 11:36 AM
+
+What happens when error ocurred on a batch system?
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1876-77 | Added on Thursday, January 24, 2019, 11:37 AM
+
+If the program discovers an error in its input and wants to terminate abnormally, it may also want to define an error level.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1879-80 | Added on Thursday, January 24, 2019, 11:38 AM
+
+A process or job executing one program may want to load and execute another program.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1881-82 | Added on Thursday, January 24, 2019, 11:38 AM
+
+An interesting question is where to return control when the loaded program terminates.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1884 | Added on Thursday, January 24, 2019, 11:39 AM
+
+Figure 2.8 Types of system calls.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1885-86 | Added on Thursday, January 24, 2019, 12:04 PM
+
+If control returns to the existing program when the new program terminates, we must save the memory image of the existing program; thus, we have effectively created a mechanism for one program to call another program.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1889 | Added on Thursday, January 24, 2019, 12:17 PM
+
+EXAMPLES OF WINDOWS AND UNIX SYSTEM CALLS
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1890-91 | Added on Thursday, January 24, 2019, 01:32 PM
+
+If we create a new job or process, or perhaps even a set of jobs or processes, we should be able to control its execution.
+==========
+Operating System Concepts (Greg Gagne)
+- Note Loc. 1891 | Added on Thursday, January 24, 2019, 01:33 PM
+
+What to do to control the execution of a process?
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1907-9 | Added on Thursday, January 24, 2019, 02:50 PM
+
+There are so many facets of and variations in process and job control that we next use two examples—one involving a single-tasking system and the other a multitasking system—to clarify these concepts.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1931 | Added on Thursday, January 24, 2019, 03:48 PM
+
+2.4.2 File Management
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1932 | Added on Thursday, January 24, 2019, 03:48 PM
+
+several common system calls dealing with files.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1938-39 | Added on Thursday, January 24, 2019, 03:51 PM
+
+File attributes include the file name, file type, protection codes, accounting information, and so on. At least two system calls, get file attribute and set file attribute, are required for this function.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1942 | Added on Thursday, January 24, 2019, 08:47 PM
+
+2.4.3 Device Management
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1945-47 | Added on Thursday, January 24, 2019, 08:48 PM
+
+The various resources controlled by the operating system can be thought of as devices. Some of these devices are physical devices (for example, disk drives), while others can be thought of as abstract or virtual devices (for example, files).
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1951-52 | Added on Thursday, January 24, 2019, 08:52 PM
+
+the similarity between I/O devices and files is so great that many operating systems, including UNIX, merge the two into a combined file-device structure.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1956 | Added on Thursday, January 24, 2019, 08:55 PM
+
+2.4.4 Information Maintenance
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1957-58 | Added on Thursday, January 24, 2019, 08:57 PM
+
+Many system calls exist simply for the purpose of transferring information between the user program and the operating system.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1958-59 | Added on Thursday, January 24, 2019, 08:58 PM
+
+information about the system,
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1960 | Added on Thursday, January 24, 2019, 08:58 PM
+
+Another set of system calls is helpful in debugging a program.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1963-64 | Added on Thursday, January 24, 2019, 11:06 PM
+
+Many operating systems provide a time profile of a program to indicate the amount of time that the program executes at a particular location or set of locations.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1967-68 | Added on Thursday, January 24, 2019, 11:06 PM
+
+In addition, the operating system keeps information about all its processes, and system calls are used to access this information.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1969-70 | Added on Thursday, January 24, 2019, 11:06 PM
+
+2.4.5 Communication
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1970-71 | Added on Thursday, January 24, 2019, 11:07 PM
+
+There are two common models of interprocess communication: the message-passing model and the shared-memory model.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1972-74 | Added on Thursday, January 24, 2019, 11:39 PM
+
+Before communication can take place, a connection must be opened. The name of the other communicator must be known, be it another process on the same system or a process on another computer connected by a communications network.
+==========
+Operating System Concepts (Greg Gagne)
+- Note Loc. 1974 | Added on Thursday, January 24, 2019, 11:42 PM
+
+How is a connection opened to enable IPC in a message-passing model?
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1975 | Added on Thursday, January 24, 2019, 11:47 PM
+
+process name,
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1976 | Added on Thursday, January 24, 2019, 11:47 PM
+
+hostid and get processid system calls do this translation.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1976 | Added on Thursday, January 24, 2019, 11:47 PM
+
+get hostid and get processid system calls
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1975-76 | Added on Thursday, January 24, 2019, 11:48 PM
+
+each process has a process name, and this name is translated into an identifier by which the operating system can refer to the process. The get hostid and get processid system calls do this translation.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1979-80 | Added on Thursday, January 24, 2019, 11:55 PM
+
+Most processes that will be receiving connections are special-purpose daemons, which are systems programs provided for that purpose.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1980-81 | Added on Thursday, January 24, 2019, 11:56 PM
+
+The source of the communication, known as the client, and the receiving daemon, known as a server, then exchange messages by using read message and write message system calls.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1982-83 | Added on Thursday, January 24, 2019, 11:57 PM
+
+In the shared-memory model, processes use shared memory create and shared memory attach system calls to create and gain access to regions of memory owned by other processes.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1984-85 | Added on Friday, January 25, 2019, 12:00 AM
+
+Shared memory requires that two or more processes agree to remove this restriction.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1986-87 | Added on Friday, January 25, 2019, 12:00 AM
+
+The processes are also responsible for ensuring that they are not writing to the same location simultaneously.
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1989-92 | Added on Friday, January 25, 2019, 12:03 AM
+
+Message passing is useful for exchanging smaller amounts of data, because no conflicts need be avoided. It is also easier to implement than is shared memory for intercomputer communication. Shared memory allows maximum speed and convenience of communication, since it can be done at memory transfer speeds when it takes place within a computer. Problems exist, however, in the areas of protection and synchronization between the processes sharing memory.
+==========
+Operating System Concepts (Greg Gagne)
+- Note Loc. 1992 | Added on Friday, January 25, 2019, 12:06 AM
+
+What are the advantages and disadvantages of the message-passing and the shared memory models?
+==========
+Operating System Concepts (Greg Gagne)
+- Highlight Loc. 1992-93 | Added on Friday, January 25, 2019, 12:06 AM
+
+2.4.6 Protection
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1869 | Added on Friday, January 25, 2019, 01:08 AM
+
+3.5.7. Parentheses and Operator Hierarchy
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1869-70 | Added on Friday, January 25, 2019, 01:09 AM
+
+Table 3.4 on the following page shows the precedence of operators.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1883 | Added on Friday, January 25, 2019, 01:14 AM
+
+3.5.8. Enumerated Types
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1891-92 | Added on Friday, January 25, 2019, 01:17 AM
+
+A variable of type Size can hold only one of the values listed in the type declaration, or the special value null that indicates that the variable is not set to any value at all.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1893-94 | Added on Friday, January 25, 2019, 01:18 AM
+
+3.6. Strings Conceptually, Java strings are sequences of Unicode characters.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1895-96 | Added on Friday, January 25, 2019, 01:19 AM
+
+Java does not have a built-in string type. Instead, the standard Java library contains a predefined class called, naturally enough, String.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1898 | Added on Friday, January 25, 2019, 01:19 AM
+
+3.6.1. Substrings
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1901-2 | Added on Friday, January 25, 2019, 08:48 AM
+
+The second parameter of substring is the first position that you do not want to copy.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1904-5 | Added on Friday, January 25, 2019, 08:49 AM
+
+The string s.substring(a, b) always has length b - a.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1905-6 | Added on Friday, January 25, 2019, 08:50 AM
+
+3.6.2. Concatenation Java,
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1906-7 | Added on Friday, January 25, 2019, 08:50 AM
+
+allows you to use + to join (concatenate) two strings.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1910-11 | Added on Friday, January 25, 2019, 08:53 AM
+
+When you concatenate a string with a value that is not a string, the latter is converted to a string.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1917-18 | Added on Friday, January 25, 2019, 08:55 AM
+
+3.6.3. Strings Are Immutable The String class gives no methods that let you change a character in an existing string.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1920 | Added on Friday, January 25, 2019, 08:56 AM
+
+How are we going to modify the string?
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1923-24 | Added on Friday, January 25, 2019, 08:57 AM
+
+the documentation refers to the objects of the String class as immutable.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1929-30 | Added on Friday, January 25, 2019, 08:59 AM
+
+But immutable strings have one great advantage: The compiler can arrange that strings are shared.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1931-32 | Added on Friday, January 25, 2019, 09:00 AM
+
+If you copy a string variable, both the original and the copy share the same characters.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1958-60 | Added on Friday, January 25, 2019, 09:04 AM
+
+3.6.4. Testing Strings for Equality To test whether two strings are equal, use the equals method.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1964 | Added on Friday, January 25, 2019, 09:05 AM
+
+use the equalsIgnoreCase method.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1965-66 | Added on Friday, January 25, 2019, 09:06 AM
+
+Do not use the == operator to test whether two strings are equal! It only determines whether or not the strings are stored in the same location.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1981-82 | Added on Friday, January 25, 2019, 09:09 AM
+
+The Java method compareTo is the exact analog to strcmp.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1985-88 | Added on Friday, January 25, 2019, 09:10 AM
+
+3.6.5. Empty and Null Strings The empty string "" is a string of length 0. You can test whether a string is empty by calling if (str.length() == 0) or if (str.equals(""))
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1990-91 | Added on Friday, January 25, 2019, 09:11 AM
+
+a String variable can also hold a special value, called null, that indicates that no object is currently associated with the variable.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1996 | Added on Friday, January 25, 2019, 09:12 AM
+
+3.6.5. Code Points and Code Units
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 1998-2001 | Added on Friday, January 25, 2019, 09:14 AM
+
+the char data type is a code unit for representing Unicode code points in the UTF-16 encoding. The most commonly used Unicode characters can be represented with a single code unit. The supplementary characters require a pair of code units. The length method yields the number of code units required for a given string in the UTF-16 encoding.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 2002-5 | Added on Friday, January 25, 2019, 09:15 AM
+
+To get the true length—that is, the number of code points—call int cpCount = greeting.codePointCount(0, greeting.length()); The call s.charAt(n) returns the code unit at position n, where n is between 0 and s.length() – 1.
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 2008 | Added on Friday, January 25, 2019, 09:17 AM
+
+To get at the ith code point, use the statements
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 2009 | Added on Friday, January 25, 2019, 09:17 AM
+
+int index =
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 2009-10 | Added on Friday, January 25, 2019, 09:17 AM
+
+greeting.offsetByCodePoints(0, i); int cp = greeting.codePointAt(index);
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 2021-22 | Added on Friday, January 25, 2019, 10:01 AM
+
+int cp = sentence.codePointAt(i); if
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 2024 | Added on Friday, January 25, 2019, 10:09 AM
+
+i--; if
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 2025-26 | Added on Friday, January 25, 2019, 10:10 AM
+
+3.6.6. The String API
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Bookmark Loc. 2100 | Added on Friday, January 25, 2019, 11:29 AM
+
+
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 2100 | Added on Friday, January 25, 2019, 11:29 AM
+
+3.6.7. Reading the Online API Documentation
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 2120 | Added on Friday, January 25, 2019, 11:33 AM
+
+3.6.8. Building Strings
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 2124-25 | Added on Friday, January 25, 2019, 11:33 AM
+
+First, construct an empty string builder: StringBuilder builder = new StringBuilder();
+==========
+Core Java Volume I--Fundamentals (9th Edition): 1 (Core Series) (Cay S. Horstmann and Gary Cornell)
+- Highlight Loc. 2127 | Added on Friday, January 25, 2019, 11:34 AM
+
+Each time you need to add another part, call the append method.
+==========
