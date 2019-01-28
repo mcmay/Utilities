@@ -32,10 +32,12 @@ public class AddHomeMadeObjectsToArrayList {
                         myObList.add(mo);
                 }
 		String dispStr = null;
+        System.out.println("Strings stored in myObList:");
                 for (int i = 0; i < myObList.size(); i++) {
 			dispStr = myObList.get(i).getStr();
                         System.out.println(dispStr);
                 }
+                System.out.println("Strings stored in strList:");
                 for (int i = 0; i < strList.size(); i++) {
 			dispStr = strList.get(i);
                         System.out.println(dispStr);
