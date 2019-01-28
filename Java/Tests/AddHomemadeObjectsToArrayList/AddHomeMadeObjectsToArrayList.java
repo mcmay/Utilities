@@ -30,7 +30,7 @@ public class AddHomeMadeObjectsToArrayList {
 			// which are added to myObList
 			// will end up pointing to the same string, i.e.
 			// the last string in the strings array.
-                	MyObject mo = new MyObject("noString");
+                	MyObject mo = new MyObject("");
 			strList.add(strings[i]);
                         mo.setStr(strings[i]);
                         myObList.add(mo);
