@@ -6,3 +6,7 @@ parrotTrouble(true, 6) → true
 parrotTrouble(true, 7) → false
 parrotTrouble(false, 6) → false
 */
+
+public class ParrotTrouble {
+    
+}
