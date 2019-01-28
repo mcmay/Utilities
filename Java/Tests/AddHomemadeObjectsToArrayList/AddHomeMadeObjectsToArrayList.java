@@ -26,6 +26,10 @@ public class AddHomeMadeObjectsToArrayList {
                 for (int i = 0; i < strings.length; i++) {
 			// Every time there must be a "new" MyObject instance mo 
 			// created to hold a different string
+			// Otherwise, all the copies of the same mo
+			// which are added to myObList
+			// will end up pointing to the same string, i.e.
+			// the last string in the strings array.
                 	MyObject mo = new MyObject("noString");
 			strList.add(strings[i]);
                         mo.setStr(strings[i]);
