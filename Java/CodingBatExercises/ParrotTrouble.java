@@ -7,13 +7,27 @@ parrotTrouble(true, 7) → false
 parrotTrouble(false, 6) → false
 */
 
+import java.util.*;
+
 public class ParrotTrouble {
-    static void parrotTrouble (boolean isTalking, int hour) {
-        boolean isTroubleHour = false;
+    static boolean parrotTrouble (boolean isTalking, int hour) {
         
         if (hour < 0 && hour > 23) {
             System.err.println("hour is out of bounds (0 <= hour <= 23).");
-            System.exit();
+            System.exit(1);
         }
+        return ((hour < 7 && hour > 20) && isTalking);
+    }
+    
+    public static void main (String[] args) {
+        GregorianCalendar calendar = new GregorianCalendar();
+        Date now = calendar.get();
+        int hour = getHour();
+        System.out.println("The hour now is " + hour);
+        boolean isTrouble = parrotTrouble(true, hour);
+        String isOrIsNot = " isn't ";
+        if (isTrouble)
+            isOrIsNot = " is ";
+        System.out.println("The parrot " +  isOrIsNot + "making trouble.");
     }
 }
