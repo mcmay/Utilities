@@ -8,5 +8,12 @@ parrotTrouble(false, 6) → false
 */
 
 public class ParrotTrouble {
-    
+    static void parrotTrouble (boolean isTalking, int hour) {
+        boolean isTroubleHour = false;
+        
+        if (hour < 0 && hour > 23) {
+            System.err.println("hour is out of bounds (0 <= hour <= 23).");
+            System.exit();
+        }
+    }
 }
