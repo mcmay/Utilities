@@ -1,0 +1,971 @@
+
+Sat Jan 26 04:45:48 GMT 2019
+
+inheritance chain.
+
+inheritance hierarchy,
+
+“is–a” rule
+
+substitution principle.
+
+substitution principle. That principle states that you can use a subclass object whenever the program expects a superclass object.
+
+object variables are polymorphic.
+
+In this case, the variables staff[0] and boss refer to the same object. However, staff[0] is considered to be only an Employee object by the compiler.
+
+arrays of subclass references can be converted to arrays of superclass references without a cast.
+
+To make sure no such corruption can occur, all arrays remember the element type with which they were created, and they monitor that only compatible references are stored into them.
+
+overloading resolution.
+
+If you define a method in a subclass that has the same signature as a superclass method, then you override that method.
+
+when you override a method, you need to keep the return type compatible. A subclass may change the return type to a subtype of the original type.
+
+covariant return types.
+
+static binding.
+
+the method is private, static, final, or a constructor, then the compiler knows exactly which method to call.
+
+When the program runs and uses dynamic binding to call a method, then the virtual machine must call the version of the method that is appropriate for the actual type of the object to which x refers.
+
+the virtual machine precomputes for each class a method table that lists all method signatures and the actual methods to be called.
+
+Dynamic binding has a very important property: It makes programs extensible without the need for modifying existing code.
+
+When you override a method, the subclass method must be at least as visible as the superclass method. In particular, if the superclass method is public, then the subclass method must also be declared as public.
+
+2.3.1. Troubleshooting Hints
+
+2.4. Using an Integrated Development Environment
+
+2.4.1. Locating Compilation Errors
+
+2.5. Running a Graphical Application
+
+2.6. Building and Running Applets
+
+most of the early hype about Java came from its ability to run applets inside a web browser.
+
+Chapter 3. Fundamental Programming Structures in Java
+
+3.1. A Simple Java Program
+
+access modifier;
+
+access modifier; these modifiers control the level of access other parts of a program have to this code.
+
+Names must begin with a letter, and after that, they can have any combination of letters and digits.
+
+You need to make the file name for the source code the same as the name of the public class,
+
+it is remarkable that Sun made the bug reports and their resolutions available for anyone to scrutinize, long before Java was open source. The “bug parade” is a very useful resource for programmers.
+
+If the main method exits normally, the Java program has the exit code 0, indicating successful completion. To terminate the program with a different exit code, use the System.exit method.
+
+a variant of the println method with no parameters just prints a blank line. You invoke it with the call System.out.println();
+
+System.out also has a print method that doesn’t add a newline character to the output.
+
+3.2. Comments
+
+a third kind of comment can be used to generate documentation automatically. This comment uses a /** to start and a */ to end.
+
+3.3. Data Types
+
+There are eight primitive types in Java.
+
+3.3.1. Integer Types
+
+In most situations, the int type is the most practical.
+
+The byte and short types are mainly intended for specialized applications, such as low-level file handling, or for large arrays when storage space is at a premium.
+
+Under Java, the ranges of the integer types do not depend on the machine on which you will be running the Java code.
+
+Long integer numbers have a suffix L (for example, 4000000000L). Hexadecimal numbers have a prefix 0x (for example, 0xCAFE). Octal numbers have a prefix 0. For example, 010 is 8.
+
+Starting with Java 7, you can write numbers in binary, with a prefix 0b.
+
+Also starting with Java 7, you can add underscores to number literals, such as 1_000_000 (or 0b1111_0100_0010_0100_0000) to denote one million. The underscores are for human eyes only. The Java compiler simply removes them.
+
+Note that Java does not have any unsigned types.
+
+3.3.2. Floating-Point Types
+
+Here, the type to choose in most applications is double.
+
+Numbers of type float have a suffix F (for example, 3.14F). Floating-point numbers without an F suffix (such as 3.14) are always considered to be of type double. You can optionally supply the D suffix (for example, 3.14D).
+
+You can specify floating-point literals in hexadecimal. For example, 0.125 = 2–3 can be written as 0x1.0p-3. In hexadecimal notation, you use a p, not an e, to denote the exponent.
+
+Note that the mantissa is written in hexadecimal and the exponent in decimal. The base of the exponent is 2, not 10.
+
+In particular, there are three special floating-point values to denote overflows and errors: • Positive infinity • Negative infinity • NaN (not a number) For example, the result of dividing a positive number by 0 is positive infinity. Computing 0/0 or the square root of a negative number yields NaN.
+
+The constants Double.POSITIVE_INFINITY, Double.NEGATIVE_INFINITY, and Double.NaN (as well as corresponding Float constants) represent these special values,
+
+the Double.isNaN method: if (Double.isNaN(x)) // check whether x is "not a number"
+
+Floating-point numbers are not suitable for financial calculations in which roundoff errors cannot be tolerated.
+
+If you need precise numerical computations without roundoff errors, use the BigDecimal class,
+
+3.3.3. The char Type
+
+3.3.3. The char Type The char type is used to describe individual characters. Most commonly, these will be character constants.
+
+Unicode code units can be expressed as hexadecimal values that run from \u0000 to \uFFFF.
+
+the \u escape sequences
+
+there are several escape sequences for special characters, as shown in Table 3.3. You can use these escape sequences inside quoted character constants and strings, such as '\u2122' or "Hello\n". The \u escape sequence (but none of the other escape sequences) can even be used outside quoted character constants and strings.
+
+A code point is a code value that is associated with a character in an encoding scheme. In the Unicode standard, code points are written in hexadecimal and prefixed with U+, such as U+0041 for the code point of the Latin letter A. Unicode has code points that are grouped into 17 code planes. The first code plane, called the basic multilingual plane, consists of the “classic” Unicode characters with code points U+0000 to U+FFFF. Sixteen additional planes, with code points U+10000 to U+10FFFF, hold the supplementary characters.
+
+A code point is a code value that is associated with a character in an encoding scheme.
+
+In the Unicode standard, code points are written in hexadecimal and prefixed with U+, such as U+0041 for the code point of the Latin letter A.
+
+A code point is a code value that is associated with a character in an encoding scheme. In the Unicode standard, code points are written in hexadecimal and prefixed with U+, such as U+0041 for the code point of the Latin letter A. Unicode has code points that are grouped into 17 code planes. The first code plane, called the basic multilingual plane, consists of the “classic” Unicode characters with code points U+0000 to U+FFFF. Sixteen additional planes, with code points U+10000 to U+10FFFF, hold the supplementary characters.
+
+The UTF-16 encoding represents all Unicode code points in a variable-length code. The characters in the basic multilingual plane are represented as 16-bit values, called code units. The supplementary characters are encoded as consecutive pairs of code units. Each of the values in such an encoding pair falls into a range of 2048 unused values of the basic multilingual plane, called the surrogates area (U+D800 to U+DBFF for the first code unit, U+DC00 to U+DFFF for the second code unit).
+
+In Java, the char type describes a code unit in the UTF-16 encoding. Our strong recommendation is not to use the char type in your programs unless you are actually manipulating UTF-16 code units. You are almost always better off treating strings (which we will discuss in Section 3.6, “Strings,” on p. 64) as abstract data types. 3.3.4. The boolean Type
+
+You cannot convert between integers and boolean values.
+
+3.4. Variables
+
+Note that the terms “letter” and “digit” are much broader in Java than in most languages. A letter is defined as 'A'–'Z', 'a'–'z', '_', '$', or any Unicode character that denotes a letter in a language.
+
+If you are really curious as to what Unicode characters are “letters” as far as Java is concerned, you can use the isJavaIdentifierStart and isJavaIdentifierPart methods in the Character class to check.
+
+Even though $ is a valid Java letter, you should not use it in your own code. It is intended for names that are generated by the Java compiler and other tools.
+
+3.4.1. Initializing Variables
+
+in Java you can put declarations anywhere in your code.
+
+In Java, it is considered good style to declare variables as closely as possible to the point where they are first used.
+
+3.4.2. Constants In Java, you use the keyword final to denote a constant.
+
+class constants. Set up a class constant with the keywords static final.
+
+3.5. Operators
+
+Note that integer division by 0 raises an exception, whereas floating-point division by 0 yields an infinite or NaN result.
+
+methods tagged with the strictfp keyword must use strict floating-point operations that yield reproducible results.
+
+methods tagged with the strictfp keyword must use strict floating-point operations that yield reproducible results. For example, you can tag main as public static strictfp void main(String[] args) Then all instructions inside the main method will use strict floating-point computations. If you tag a class as strictfp, then all of its methods must use strict floating-point computations.
+
+3.5.1. Increment and Decrement Operators
+
+3.5.2. Relational and boolean Operators
+
+3.5.3. Bitwise Operators
+
+a >>> operator fills the top bits with zero, unlike >> which extends the sign bit into the top bits. There is no <<< operator.
+
+The right-hand side argument of the shift operators is reduced modulo 32 (unless the left-hand side is a long, in which case the right-hand side is reduced modulo 64). For example, the value of 1 << 35 is the same as 1 << 3 or 8.
+
+3.5.4. Mathematical Functions and Constants
+
+You can avoid the Math prefix for the mathematical methods and constants by adding the following line to the top of your source file: import static java.lang.Math.*;
+
+If completely predictable results are more important than fast performance, use the StrictMath class instead. It implements the algorithms from the “Freely Distributable Math Library” fdlibm, guaranteeing identical results on all platforms.
+
+3.5.5. Conversions between Numeric Types
+
+Figure 3.1. Legal conversions between numeric types
+
+When two values are combined with a binary operator (such as n + f where n is an integer and f is a floating-point value), both operands are converted to a common type before the operation is carried out. • If either of the operands is of type double, the other one will be converted to a double. • Otherwise, if either of the operands is of type float, the other one will be converted to a float. • Otherwise, if either of the operands is of type long, the other one will be converted to a long. • Otherwise, both operands will be converted to an int.
+
+3.5.6. Casts
+
+If you want to round a floating-point number to the nearest integer (which in most cases is the more useful operation), use the Math.round method: double x = 9.997; int nx = (int) Math.round(x);
+
+You still need to use the cast (int) when you call round.
+
+If you try to cast a number of one type to another that is out of the range for the target type, the result will be a truncated number that has a different value. For example, (byte) 300 is actually 44.
+
+3.5.7. Parentheses and Operator Hierarchy
+
+Table 3.4 on the following page shows the precedence of operators.
+
+3.5.8. Enumerated Types
+
+A variable of type Size can hold only one of the values listed in the type declaration, or the special value null that indicates that the variable is not set to any value at all.
+
+3.6. Strings Conceptually, Java strings are sequences of Unicode characters.
+
+Java does not have a built-in string type. Instead, the standard Java library contains a predefined class called, naturally enough, String.
+
+3.6.1. Substrings
+
+The second parameter of substring is the first position that you do not want to copy.
+
+The string s.substring(a, b) always has length b - a.
+
+3.6.2. Concatenation Java,
+
+allows you to use + to join (concatenate) two strings.
+
+When you concatenate a string with a value that is not a string, the latter is converted to a string.
+
+3.6.3. Strings Are Immutable The String class gives no methods that let you change a character in an existing string.
+
+How are we going to modify the string?
+
+the documentation refers to the objects of the String class as immutable.
+
+But immutable strings have one great advantage: The compiler can arrange that strings are shared.
+
+If you copy a string variable, both the original and the copy share the same characters.
+
+3.6.4. Testing Strings for Equality To test whether two strings are equal, use the equals method.
+
+use the equalsIgnoreCase method.
+
+Do not use the == operator to test whether two strings are equal! It only determines whether or not the strings are stored in the same location.
+
+The Java method compareTo is the exact analog to strcmp.
+
+3.6.5. Empty and Null Strings The empty string "" is a string of length 0. You can test whether a string is empty by calling if (str.length() == 0) or if (str.equals(""))
+
+a String variable can also hold a special value, called null, that indicates that no object is currently associated with the variable.
+
+3.6.5. Code Points and Code Units
+
+the char data type is a code unit for representing Unicode code points in the UTF-16 encoding. The most commonly used Unicode characters can be represented with a single code unit. The supplementary characters require a pair of code units. The length method yields the number of code units required for a given string in the UTF-16 encoding.
+
+To get the true length—that is, the number of code points—call int cpCount = greeting.codePointCount(0, greeting.length()); The call s.charAt(n) returns the code unit at position n, where n is between 0 and s.length() – 1.
+
+To get at the ith code point, use the statements
+
+int index =
+
+greeting.offsetByCodePoints(0, i); int cp = greeting.codePointAt(index);
+
+int cp = sentence.codePointAt(i); if
+
+i--; if
+
+3.6.6. The String API
+
+3.6.7. Reading the Online API Documentation
+
+3.6.8. Building Strings
+
+First, construct an empty string builder: StringBuilder builder = new StringBuilder();
+
+Each time you need to add another part, call the append method.
+
+Sun Jan 27 05:37:47 GMT 2019
+
+When you are done building the string, call the toString method. You will get a String object with the character sequence contained in the builder. String completedString = builder.toString();
+
+The StringBuilder class was introduced in JDK 5.0. Its predecessor, StringBuffer, is slightly less efficient, but it allows multiple threads to add or remove characters. If all string editing happens in a single thread (which is usually the case), you should use StringBuilder instead. The APIs of both classes are identical.
+
+3.7. Input and Output
+
+3.7.1. Reading Input
+
+To read console input, you first construct a Scanner that is attached to System.in: Scanner in = new Scanner(System.in);
+
+How to read console input?
+
+the nextLine method reads a line of input.
+
+To read a single word (delimited by whitespace), call String firstName = in.next(); To read an integer, use the nextInt method.
+
+the nextDouble method reads the next floating-point number.
+
+The Scanner class is defined in the java.util package. Whenever you use a class that is not defined in the basic java.lang package, you need to use an import directive.
+
+The Scanner class is not suitable for reading a password from a console since the input is plainly visible to anyone.
+
+To read a password, use the following code:
+
+Console cons = System.console(); String username = cons.readLine("User name: "); char[] passwd = cons.readPassword("Password:
+
+java.util.Scanner 5.0
+
+3.7.2. Formatting Output
+
+Fortunately, Java SE 5.0 brought back the venerable printf method from the C library.
+
+Table 3.5. Conversions for printf
+
+In addition, you can specify flags that control the appearance of the formatted output. Table 3.6 shows all flags.
+
+You can use the s conversion to format arbitrary objects. If an arbitrary object implements the Formattable interface, the object’s formatTo method is invoked. Otherwise, the toString method is invoked to turn the object into a string.
+
+You can use the static String.format method to create a formatted string without printing it: String message = String.format("Hello, %s. Next year, you'll be %d", name, age);
+
+the date and time formatting options of the printf method. Use a two-letter format, starting with t and ending in one of the letters of Table 3.7;
+
+Table 3.7. Date and Time Conversion Characters
+
+It would be a bit silly if you had to supply the date multiple times to format each part.
+
+What to do to format some parts of a date?
+
+Figure 3.6 shows a syntax diagram for format specifiers.
+
+A number of the formatting rules are locale-specific. For example, in Germany, the group separator is a period, not a comma, and Monday is formatted as Montag.
+
+3.7.3. File Input and Output To read from a file, construct a Scanner object like this:
+
+If the file name contains backslashes,
+
+To write to a file, construct a PrintWriter object. In the constructor, simply supply the file name:
+
+When you specify a relative file name,
+
+What happens when you specify a relative file name?
+
+If you construct a Scanner with a file that does not exist or a PrintWriter with a file name that cannot be created, an exception occurs.
+
+When you launch a program from a command shell, you can use the redirection syntax of your shell and attach any file to System.in and System.out:
+
+java.util.Scanner 5.0
+
+java.io.PrintWriter 1.1
+
+java.nio.file.Paths 7
+
+3.8. Control Flow
+
+3.8.1. Block Scope
+
+A block or compound statement is any number of simple Java statements surrounded by a pair of braces.
+
+However, you may not declare identically named variables in two nested blocks.
+
+3.8.2. Conditional Statements
+
+3.8.3. Loops
+
+3.8.4. Determinate Loops
+
+3.8.5. Multiple Selections—The switch Statement
+
+If you like the switch statement better than we do, consider compiling your code with the -Xlint:fallthrough option, like this: javac -Xlint:fallthrough Test.java
+
+If you actually want to use the fallthrough behavior, tag the surrounding method with the annotation @SuppressWarnings("fallthrough"). Then no warnings will
+
+A case label can be
+
+What can be used as a case label?
+
+3.8.6. Statements That Break Control Flow
+
+for example, the famous article of Donald Knuth called “Structured Programming with goto statements”).
+
+The Java designers agreed and even added a new statement, the labeled break, to support this programming style.
+
+Unlike C++, Java also offers a labeled break statement that lets you break out of multiple nested loops.
+
+Notice that the label must precede the outermost loop out of which you want to break. It also must be followed by a colon.
+
+As with any use of the break statement, you then need to test whether the loop exited normally or as a result of a break.
+
+Curiously, you can apply a label to any statement, even an if statement or a block statement, like this: label: {   . . .   if (condition) break label; // exits block   . . . } // jumps here when the break statement executes
+
+There is also a labeled form of the continue statement that jumps to the header of the loop with the matching label.
+
+3.9. Big Numbers
+
+a couple of handy classes in the java.math package: BigInteger and BigDecimal.
+
+you can turn to a couple of handy classes in the java.math package: BigInteger and BigDecimal. These are classes for manipulating numbers with an arbitrarily long sequence of digits. The BigInteger class implements arbitrary-precision integer arithmetic, and BigDecimal does the same for floating-point numbers.
+
+a couple of handy classes in the java.math package: BigInteger and BigDecimal.
+
+What are BigInteger and BigDecimal for?
+
+Use the static valueOf method to turn an ordinary number into a big number: BigInteger a = BigInteger.valueOf(100);
+
+What's the method we use to turn an ordinary number into a big number?
+
+you cannot use the familiar mathematical operators such as + and * to combine big numbers. Instead, you must use methods such as add and multiply in the big number
+
+java.math.BigInteger 1.1
+
+java.math.BigDecimal 1.1
+
+3.10. Arrays
+
+The array length need not be a constant: new int[n] creates an array of length n.
+
+When you create an array of numbers, all elements are initialized with zero. Arrays of boolean are initialized with false. Arrays of objects are initialized with the special value null, which indicates that they do not (yet) hold any objects.
+
+What's an array initialized to by default at the time of its creation?
+
+3.10.1. The “for each” Loop
+
+The enhanced for loop for (variable : collection) statement sets the given variable to each element of the collection and then executes the statement
+
+The collection expression must be an array or an object of a class that implements the Iterable interface, such as ArrayList.
+
+The loop variable of the “for each” loop traverses the elements of the array, not the index values.
+
+The call Arrays.toString(a) returns a string containing the array elements, enclosed in brackets and separated by commas, such as "[2, 3, 5, 7, 11, 13]". To print the array, simply call System.out.println(Arrays.toString(a));
+
+3.10.2. Array Initializers and Anonymous Arrays
+
+Java has a shorthand to create an array object and supply initial values at the same time.
+
+What's the shorthand to create an array object?
+
+You can even initialize an anonymous array: new int[] { 17, 19, 23, 29, 31, 37 }
+
+You can use this syntax to reinitialize an array without creating a new variable. For example, smallPrimes = new int[] { 17, 19, 23, 29, 31, 37 };
+
+It is legal to have arrays of length 0. Such an array can be useful if you write a method that computes an array result and the result happens to be empty. Construct an array of length 0 as new elementType[0] Note that an array of length 0 is not the same as null.
+
+3.10.3. Array Copying
+
+You can copy one array variable into another, but then both variables refer to the same array:
+
+What happens when you copy one array variable into another?
+
+If you actually want to copy all values of one array into a new array, you use the copyOf method in the Arrays class: int[] copiedLuckyNumbers = Arrays.copyOf(luckyNumbers, luckyNumbers.length);
+
+What method is used to copy all values of one array into a new array?
+
+A common use of this method is to increase the size of an array: luckyNumbers = Arrays.copyOf(luckyNumbers, 2 * luckyNumbers.length);
+
+3.10.4. Command-Line Parameters
+
+Fri Feb 01 23:32:39 GMT 2019
+
+Sat Feb 02 00:28:51 GMT 2019
+
+In the main method of a Java program, the name of the program is not stored in the args array.
+
+3.10.5. Array Sorting
+
+To sort an array of numbers, you can use one of the sort methods in the Arrays class:
+
+Arrays.sort(a)
+
+The Math.random method returns a random floating-point number that is between 0 (inclusive) and 1 (exclusive).
+
+java.util.Arrays 1.2
+
+3.10.6. Multidimensional Arrays
+
+In other cases, if you know the array elements, you can use a shorthand notation for initializing a multidimensional array without a call to new.
+
+To print out a quick-and-dirty list of the elements of a two-dimensional array, call System.out.println(Arrays.deepToString(a));
+
+3.10.7. Ragged Arrays
+
+Java has no multidimensional arrays at all, only one-dimensional arrays. Multidimensional arrays are faked as “arrays of arrays.”
+
+It is also easy to make “ragged” arrays—that is, arrays in which different rows have different lengths.
+
+Instead, an array of ten pointers is allocated:
+
+In C++, the Java declaration double[][] balances = new double[10][6]; // Java is not the same as double balances[10][6]; // C++ or even double (*balances)[6] = new double[10][6]; // C++ Instead, an array of ten pointers is allocated: double** balances = new double*[10]; // C++ Then, each element in the pointer array is filled with an array of six numbers: for (i = 0; i < 10; i++)    balances[i] = new double[6]; Mercifully, this loop is automatic when you ask for a new double[10][6]. When you want ragged arrays, you allocate the row arrays separately.
+
+Chapter 4. Objects and Classes
+
+4.1. Introduction to Object-Oriented Programming
+
+Algorithms + Data Structures = Programs
+
+4.1.1. Classes
+
+A class is the template or blueprint from which objects are made.
+
+Encapsulation (sometimes called information hiding) is a key concept in working with objects.
+
+The bits of data in an object are called its instance fields, and the procedures that operate on the data are called its methods.
+
+What're instance fields and methods?
+
+The set of those values is the current state of the object. Whenever you invoke a method on an object, its state may change.
+
+What's the state of an object?
+
+Programs should interact with object data only through the object’s methods.
+
+Java, in fact, comes with a “cosmic superclass” called Object. All other classes extend this class.
+
+4.1.2. Objects
+
+three key characteristics
+
+What're the three key characteristics of objects?
+
+Notice that the individual objects that are instances of a class always differ in their identity and usually differ in their state.
+
+4.1.3. Identifying Classes
+
+A simple rule of thumb in identifying classes is to look for nouns in the problem analysis. Methods, on the other hand, correspond to verbs.
+
+4.1.4. Relationships between Classes
+
+The most common relationships between classes are • Dependence (“uses–a”) • Aggregation (“has–a”) • Inheritance (“is–a”)
+
+What're the most common rel bt classes?
+
+Try to minimize the number of classes that depend on each other.
+
+In software engineering terminology, you want to minimize the coupling between classes.
+
+Many programmers use the UML (Unified Modeling Language) notation to draw class diagrams that describe the relationships between classes.
+
+Table 4.1. UML notation for class relationships
+
+4.2. Using Predefined Classes
+
+4.2.1. Objects and Object Variables
+
+use constructors to construct new instances. A constructor is a special method whose purpose is to construct and initialize objects.
+
+What's a constructor?
+
+Constructors always have the same name as the class name.
+
+It is important to realize that the variable deadline is not an object and, in fact, does not even refer to an object yet.
+
+What's the diff btwn an object var and an obj?
+
+The return value of the new operator is also a reference.
+
+What is the ret val of a new op?
+
+You can explicitly set an object variable to null to indicate that it currently refers to no object.
+
+Local variables are not automatically initialized to null. You must initialize them, either by calling new or by setting them to null.
+
+But in C++ there are no null references, and references cannot be assigned. You should think of Java object variables as analogous to object pointers in C++.
+
+The equivalent of the Java null reference is the C++ NULL pointer. All Java objects live on the heap. When an object contains another object variable, it contains just a pointer to yet another heap object.
+
+In Java, you must use the clone method to get a complete copy of an object.
+
+4.2.2. The GregorianCalendar Class of the Java Library
+
+An instance of the Date class has a state, namely a particular point in time.
+
+Therefore, the standard Java library contains two separate classes: the Date class, which represents a point in time, and the GregorianCalendar class, which expresses dates in the familiar calendar notation.
+
+High ..., low coupling
+
+The Date class has only a small number of methods that allow you to compare two points in time. For example, the before and after methods tell you if one point in time comes before or after another:
+
+if (today.before(birthday))    System.out.println("Still time to shop for a gift.");
+
+new GregorianCalendar() constructs a new object that represents the date and time at which the object was constructed.
+
+You can construct a calendar object for midnight on a specific date by supplying year, month, and day: new GregorianCalendar(1999, 11, 31)
+
+Somewhat curiously, the months are counted from 0.
+
+For greater clarity, there are constants like Calendar.DECEMBER: new GregorianCalendar(1999, Calendar.DECEMBER, 31) You can also set the time: new GregorianCalendar(1999, Calendar.DECEMBER, 31, 23, 59, 59) Of course, you will usually want to store the constructed object in an object variable: GregorianCalendar deadline = new GregorianCalendar(. . .);
+
+4.2.3. Mutator and Accessor Methods
+
+What's the job of a calendar?
+
+What merhod to use to query the date, weekday, month, or year of a certain point in time? And how to use it?
+
+To change the state, call the set method:
+
+There is also a convenience method to set the year, month, and day with a single call:
+
+Finally, you can add a number of days, weeks, months, and so on, to a given calendar object:
+
+If you add a negative number, then the calendar is moved backwards.
+
+What're mutator and accessor methods?
+
+What methods are particularly useful for converting btw the Date class and the Gregorian class?
+
+java.util.GregorianCalendar 1.1
+
+java.text.DateFormatSymbols 1.1
+
+4.3. Defining Your Own Classes
+
+4.3.1. An Employee Class
+
+the name of the file must match the name of the public class. You can only have one public class in a source file, but you can have any number of nonpublic classes.
+
+4.3.2. Use of Multiple Source Files
+
+you can think of the Java compiler as having the make functionality already built in.
+
+4.3.3. Dissecting the Employee Class
+
+The keyword public means that any method in any class can call the method.
+
+What does the keyword public placed b4 a method header mean?
+
+What does the key word private mean?
+
+Classes will often contain instance fields of class type.
+
+4.3.4. First Steps with Constructors
+
+Be careful not to introduce local variables with the same names as the instance fields.
+
+4.3.5. Implicit and Explicit Parameters
+
+What is the implicit param and what are the explicit param(s) in a method?
+
+In Java, all methods are defined inside the class itself. This does not make them inline. Finding opportunities for inline replacement is the job of the Java virtual machine.
+
+4.3.6. Benefits of Encapsulation
+
+Mutator methods can perform error checking, whereas code that simply assigns to a field may not go into the trouble.
+
+Be careful not to write accessor methods that return references to mutable objects.
+
+If you need to return a reference to a mutable object, you should clone it first. A clone is an exact copy of an object stored in a new location.
+
+What should be done to return a mutable object?
+
+As a rule of thumb, always use clone whenever you need to return a copy of a mutable data field.
+
+4.3.7. Class-Based Access Privileges
+
+What many people find surprising is that a method can access the private data of all objects of its class.
+
+4.3.8. Private Methods
+
+While most methods are public, private methods are useful in certain circumstances.
+
+What're helper method?
+
+4.3.9. Final Instance Fields
+
+By making a method private, you are under no obligation to keep it available if you change your implementation.
+
+The point is that as long as the method is private, the designers of the class can be assured that it is never used outside the other class, so they can simply drop it. If a method is public, you cannot simply drop it because other code might rely on it.
+
+4.3.9. Final Instance Fields
+
+You can define an instance field as final. Such a field must be initialized when the object is constructed.
+
+Afterwards, the field may not be modified again.
+
+What's s final modifier useful for?
+
+For mutable classes, the final modifier is likely to confuse the reader. For example, private final Date hiredate;
+
+For mutable classes, the final modifier is likely to confuse the reader. For example, private final Date hiredate; merely means that the object reference stored in the hiredate variable doesn’t get changed after the object is constructed. That does not mean that the hiredate object is constant.
+
+4.4. Static Fields and Methods
+
+4.4.1. Static Fields
+
+What happens when a field is defined static?
+
+4.4.2. Static Constants
+
+Static variables are quite rare. However, static constants are more common.
+
+Another static constant that you have used many times is System.out.
+
+If you look at the System class, you will notice a method setOut that sets System.out to a different stream. You may wonder how that method can change the value of a final variable. However, the setOut method is a native method, not implemented in the Java programming language. Native methods can bypass the access control mechanisms of the Java language.
+
+4.4.3. Static Methods
+
+What're static methods?
+
+However, static methods can access the static fields in their class.
+
+What can static methods access in their class?
+
+What is needed to call a static method? 
+
+Use static methods in two situations:
+
+4.4.4. Factory Methods
+
+The NumberFormat class uses factory methods that yield formatter objects for various styles.
+
+4.4.5. The main Method
+
+Note that you can call static methods without having any objects.
+
+Every class can have a main method. That is a handy trick for unit-testing of classes.
+
+4.5. Method Parameters
+
+call by value means that
+
+call by reference means that
+
+The Java programming language always uses call by value.
+
+What is meant by call by value in Java?
+
+You have seen that it is impossible for a method to change a primitive type parameter. The situation is different for object parameters.
+
+Here is a summary of what you can and cannot do with method parameters in Java:
+
+4.6. Object Construction
+
+4.6.1. Overloading
+
+What's overloading?
+
+4.6.2. Default Field Initialization
+
+Note
+What happens if you don't set a field explicitly in a constructor?
+
+You must always explicitly initialize local variables in a method.
+
+4.6.3. The Constructor with No Arguments
+
+Many classes contain a constructor with no arguments that creates an object whose state is set to an appropriate default.
+
+What happens if a class is not explicitly given a constructor?
+
+If a class supplies at least one constructor but does not supply a no-argument constructor, it is illegal to construct objects without supplying arguments.
+
+If you write your class with even a single constructor of your own and you want the users of your class to have the ability to create an instance by a call to new ClassName() then you must provide a no-argument constructor.
+
+4.6.4. Explicit Field Initialization
+
+It is always a good idea to make sure that, regardless of the constructor call, every instance field is set to something meaningful.
+
+You can simply assign a value to any field in the class definition. For example: class Employee {    private String name = "";    . . . }
+
+This syntax is particularly useful if all constructors of a class need to set a particular instance field to the same value.
+
+The initialization value doesn’t have to be a constant value.
+
+4.6.5. Parameter Names
+
+4.6.6. Calling Another Constructor
+
+What's the sec meaning of the this keyword?
+
+Using the this keyword in this manner is useful—you only need to write common construction code once.
+
+4.6.7. Initialization Blocks
+
+You have already seen two ways to initialize a data field:
+
+Note
+There is a third mechanism in Java, called an
+
+In this example, the id field is initialized in the object initialization block, no matter which constructor is used to construct an object.
+
+However, to avoid circular definitions, it is not legal to read from fields that are only initialized later.
+
+Therefore, we suggest that you always place initialization blocks after the field definitions.
+
+Here is what happens in detail when a constructor is called:
+
+Whar are the ways for init a static field?
+
+Place the code inside a block and tag it with the keyword static.
+
+Note
+// static initialization block static {    Random generator = new Random();    nextId = generator.nextInt(10000); }
+
+java.util.Random 1.0
+
+4.6.8. Object Destruction and the finalize Method
+
+Of course, some objects utilize a resource other than memory, such as a file or a handle to another object that uses system resources. In this case, it is important that the resource be reclaimed and recycled when it is no longer needed.
+
+You can add a finalize method to any class. The finalize method will be called before the garbage collector sweeps away the object. In practice, do not rely on the finalize method for recycling any resources that are in short supply—you simply cannot know when this method will be called.
+
+The method call
+
+System.runFinalizersOnExit(true) guarantees that finalizer methods are called before Java shuts down.
+
+If a resource needs to be closed as soon as you have finished using it, you need to manage it manually. Supply a close method that does the necessary cleanup, and call it when you are done with the object.
+
+4.7. Packages
+
+What's a package made up of and what's it used for?
+
+hierarchical packages.
+
+All standard Java packages are inside the java and javax package hierarchies.
+
+The main reason for using packages is to guarantee the uniqueness of class names.
+
+What's the main reason for using packages?
+
+What to use to ensure a unique package name?
+
+From the point of view of the compiler, there is absolutely no relationship between nested packages. For example, the packages java.util and java.util.jar have nothing to do with each other. Each is its own independent collection of classes.
+
+4.7.1. Class Importation
+
+Note
+A class can use all classes from its own package and all public classes from other packages.
+
+What're the two ways to use public classes from another packages?
+
+What're the two ways to use public classes from another package?
+
+Where do we put an import statement?
+
+In Eclipse, you can select the menu option Source -> Organize Imports. Package statements such as import java.util.*; are automatically expanded into a list of specific imports
+
+The only time that you need to pay attention to packages is when you have a name conflict.
+
+You can solve this problem by adding a specific import statement: import java.util.*; import java.sql.*; import java.util.Date; What if you really need both Date classes? Then you need to use the full package name with every class name.
+
+4.7.2. Static Imports
+
+What's the use of static imports?
+
+import static java.lang.System.*;
+
+You can also import a specific method or field: import static java.lang.System.out;
+
+4.7.3. Addition of a Class into a Package
+
+How to put a class in a package?
+
+Note
+What happens if we don't put a package statement in the same file?
+
+Place source files into a subdirectory that matches the full package name.
+
+Note
+The compiler does not check the directory structure when it compiles source files.
+
+4.7.4. Package Scope
+
+If neither public nor private is specified for a class, a var or a method, what will be the access feature of the entity?
+
+For classes, this is a reasonable default. However, for variables, this was an unfortunate choice. Variables must explicitly be marked private, or they will default to being package-visible.
+
+4.8. The Class Path
+
+Class files can also be stored in a JAR (Java archive) file.
+
+What does a jar file contain?
+
+Note
+To share classes among programs, you need to do the following:
+
+This class path contains
+
+Starting with Java SE 6, you can specify a wildcard for a JAR file directory, like this:
+
+The javac compiler always looks for files in the current directory, but the java virtual machine launcher only looks into the current directory if the “.” directory is on the class path. If you have no class path set, this is not a problem—the default class path consists of the “.” directory. But if you have set the class path and forgot to include the “.” directory, your programs will compile without error, but they won’t run.
+
+If you refer to a class without specifying its package, the compiler first needs to find out the package that contains the class. It consults all import directives as possible sources for the class.
+
+The compiler goes one step further. It looks at the source files to see if the source is newer than the class file. If so, the source file is recompiled automatically.
+
+4.8.1. Setting the Class Path
+
+It is best to specify the class path with the -classpath (or -cp) option:
+
+Note
+Some people recommend to set the CLASSPATH environment variable permanently. This is generally a bad idea. People forget the global setting, and are surprised when their classes are not loaded properly.
+
+Some people recommend to bypass the class path altogether, by dropping all JAR files into the jre/lib/ext directory. That is truly bad advice, for two reasons.
+
+4.9. Documentation Comments The JDK contains a very useful tool, called javadoc, that generates HTML documentation from your source files.
+
+If you add comments that start with the special delimiter /** to your source code, you too can easily produce professional looking documentation.
+
+4.9.1. Comment Insertion The javadoc utility extracts information for the following items: • Packages • Public classes and interfaces • Public and protected fields • Public and protected constructors and methods
+
+Each comment is placed immediately above the feature it describes. A comment starts with a /** and ends with a */.
+
+Note
+Each /** . . . */ documentation comment contains free-form text followed by tags. A tag starts with an @, such as @author or @param.
+
+A tag starts with
+
+Note
+The first sentence of the free-form text should be a
+
+In the free-form text, you can use HTML modifiers
+
+You should, however, stay away from headings <h1> or rules <hr> because they can interfere with the formatting of the document.
+
+If your comments contain links to other files such as images
+
+4.9.2. Class Comments
+
+The class comment must be placed after any import statements, directly before the class definition.
+
+4.9.3. Method Comments
+
+Each method comment must immediately precede the method that it describes. In addition to the general-purpose tags, you can use the following tags:
+
+@param variable description
+
+• @param variable description
+
+• @return description
+
+• @throws class description
+
+4.9.4. Field Comments
+
+You only need to document public fields—generally that means static constants.
+
+4.9.5. General Comments
+
+The following tags can be used in class documentation comments:
+
+• @author name
+
+• @version text
+
+The following tags can be used in all documentation comments:
+
+• @since text
+
+• @deprecated text
+
+You can use hyperlinks to other relevant parts of the javadoc documentation, or to external documents, with the @see and @link tags.
+
+4.9.6. Package and Overview Comments
+
+to generate package comments, you need to add a separate file in each package directory. You have two choices:
+
+Note
+4.9.7. Comment Extraction
+
+Another useful option is -link, to include hyperlinks to standard classes. For example, if you use the command
+
+Note
+Another useful option is -link, to include hyperlinks to standard classes.
+
+If you use the -linksource option, each source file is converted to HTML (without color coding, but with line numbers), and each class and method name turns into a hyperlink to the source.
+
+4.10. Class Design Hints
+
+some hints that will make your classes more acceptable in well-mannered OOP circles.
+
+1. Always keep data private.
+
+Note
+2. Always initialize data.
+
+3. Don’t use too many basic types in a class.
+
+4. Not all fields need individual field accessors and mutators.
+
+6. Break up classes that have too many responsibilities.
+
+7. Make the names of your classes and methods reflect their responsibilities.
