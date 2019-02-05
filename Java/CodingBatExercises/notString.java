@@ -13,4 +13,12 @@ public class NotString {
             return str;
         return "not " + str;
     }
+    public static main(String[] args) {
+        String not_string = notString("candy");
+        System.out.println(not_string);
+        not_string = notString("x");
+        System.out.println(not_string);
+        not_string = notString("not bad");
+        System.out.println(not_string);
+    }
 }
