@@ -20,5 +20,7 @@ public class NotString {
         System.out.println(not_string);
         not_string = notString("not bad");
         System.out.println(not_string);
+        not_string = notString("notGood");
+        System.out.println(not_string);
     }
 }
