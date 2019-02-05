@@ -7,13 +7,13 @@ notString("x") → "not x"
 notString("not bad") → "not bad"
 */
 
-public class NotString {
+public class Main {
     static String notString (String str) {
-        if (str.startWith("not"))
+        if (str.startsWith("not"))
             return str;
         return "not " + str;
     }
-    public static main(String[] args) {
+    public static void main(String[] args) {
         String not_string = notString("candy");
         System.out.println(not_string);
         not_string = notString("x");
