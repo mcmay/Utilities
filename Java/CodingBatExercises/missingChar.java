@@ -8,5 +8,9 @@ missingChar("kitten", 4) → "kittn"
 */
 
 public class MissingChar {
-    public String missingChar (String str, int 
+    public String missingChar (String str, int n) {
+        if (str.length() == 0 || n > str.length - 1 || n < 0) {
+            System.err.println("str is an empty string or n is of an invalid the length.");
+        }
+    }
 }
