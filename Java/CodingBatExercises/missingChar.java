@@ -7,4 +7,6 @@ missingChar("kitten", 0) → "itten"
 missingChar("kitten", 4) → "kittn"
 */
 
-public class 
+public class MissingChar {
+    public String missingChar (String str, int 
+}
