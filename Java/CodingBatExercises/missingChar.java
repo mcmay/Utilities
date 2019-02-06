@@ -15,4 +15,13 @@ public class MissingChar {
         }
         return str.substring(0, n) + str.(n, str.length() - 1);
     }
+    public static void main(String[] args) {
+
+	String s = missingChar("kitten", 1);
+	System.out.println(s);
+	s = missingChar("kitten", 0);
+	System.out.println(s);
+	s = missingChar("kitten", 4);
+	System.out.println(s);
+    }
 }
