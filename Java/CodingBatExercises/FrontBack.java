@@ -5,7 +5,7 @@ frontBack("code") → "eodc"
 frontBack("a") → "a"
 frontBack("ab") → "ba"
 */
-public class FrontBack {
+public class Main {
     static String frontBack (String str) {
         if (str.length() < 1) {
             System.err.println("Invalid string length");
@@ -15,12 +15,17 @@ public class FrontBack {
             return str;
         }
         else if (str.length() == 2) {
-            return str.charAt(1) + str.charAt(0);
+            char front = str.charAt(0);
+			 char back = str.charAt(1);
+			 
+			 String s = back + front;
+			 
+			 return s;
         }
         else {
-            int front = str.charAt(0);
+            char front = str.charAt(0);
             String substr = str.substring(1, str.length() - 1);
-            int back = str.charAt(str.length() - 1);
+            char back = str.charAt(str.length() - 1);
             return back + substr + front;
         }
     }
