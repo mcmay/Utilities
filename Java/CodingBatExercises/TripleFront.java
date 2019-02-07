@@ -5,7 +5,7 @@ front3("Java") → "JavJavJav"
 front3("Chocolate") → "ChoChoCho"
 front3("abc") → "abcabcabc"
 */
-public class TripleFront {
+public class Main {
     static String front3 (String str) {
         String front = null;
         
@@ -15,12 +15,14 @@ public class TripleFront {
             front = str.substring(0, 3);
         return front + front + front;
     }
-    public static main (String[] args) {
+    public static void main (String[] args) {
         String s = front3("Java");
         System.out.println(s);
         s = front3("Chocolate");
         System.out.println(s);
         s = front3("abc");
+        System.out.println(s);
+		 s = front3("ef");
         System.out.println(s);
     }
 }
