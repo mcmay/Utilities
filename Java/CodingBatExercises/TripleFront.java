@@ -15,4 +15,12 @@ public class TripleFront {
             front = str.substring(0, 3);
         return front + front + front;
     }
+    public static main (String[] args) {
+        String s = front3("Java");
+        System.out.println(s);
+        s = front3("Chocolate");
+        System.out.println(s);
+        s = front3("abc");
+        System.out.println(s);
+    }
 }
