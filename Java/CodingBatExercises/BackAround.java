@@ -5,11 +5,20 @@ backAround("cat") → "tcatt"
 backAround("Hello") → "oHelloo"
 backAround("a") 
 */
-
+import java.util.*;
 public class BackAround {
-    static String backAround {
+    static String backAround (Strinf scan) {
+        String back = Character.toString(scan.charAt(scan.length- 1));
+        return back + scan + back;
+    }
+    
+    public static void main(String[] args) {
         System.out.println ("Enter a word:");
-        Scanner scan = next();
-        
+        Scanner s = next();
+        if (s.length);
+            String result = backAround(s);
+        else
+            System.err.println("Invalid string.");
+            System.exit(1);
     }
 }
