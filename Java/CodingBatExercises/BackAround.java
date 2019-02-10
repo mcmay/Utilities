@@ -7,21 +7,19 @@ backAround("a")
 */
 import java.util.*;
 
-public class Main {
+public class BackAround {
     static String backAround (String scan) {
-        String back = Character.toString(scan.charAt(scan.length- 1));
+        String back = Character.toString(scan.charAt(scan.length()- 1));
         return back + scan + back;
     }
     
     public static void main(String[] args) {
-		String result = null;
 	
         System.out.println ("Enter a word:");
         Scanner s = new Scanner(System.in);
-		    s.next();
-        if (s.length) {
-			result = backAround(s);
-			System.out.println(s);
+	String str = s.next();
+        if (str.length() > 0) {
+		System.out.println(backAround(str));
 		}
         else {
             System.err.println("Invalid string.");
