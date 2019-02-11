@@ -5,3 +5,14 @@ startHi("hi there") → true
 startHi("hi") → true
 startHi("hello hi") → false
 */
+
+public class StartWithHi {
+    public static boolean startWithHi (String s) {
+        String front = null;
+        if (s.length() > 2) {
+            front = s.substring(0, 2);
+            return front == "hi";
+        }
+        return false;
+    }
+}
