@@ -11,11 +11,19 @@ public class FrontTwoChars {
         
         if (str.length() <= 2 && str.length() > 0)
             front = str;
-        else if (str.length() > 2) {
+        else if (str.length() > 2) 
             front = str.substring(0, 2);
         else {
             System.err.println("Invalid string.");
+            System.exit(1);
             }
-        }
+    }
+    public static void main (String[] args) {
+        String s = frontTwoChars("Kitten");
+        System.out.println(s);
+        s = frontTwoChars("Ha");
+        System.out.println(s);
+        s = frontTwoChars("abc");
+        System.out.println(s);
     }
 }
