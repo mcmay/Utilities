@@ -15,4 +15,9 @@ public class StartWithHi {
         }
         return false;
     }
+    public static void main (String[] args) {
+        System.out.println(startWithHi("hi, there.");
+    }
+        System.out.println(startWithHi("hi");
+        System.out.println(startWithHi("hello, hi");
 }
