@@ -17,6 +17,7 @@ public class FrontTwoChars {
             System.err.println("Invalid string.");
             System.exit(1);
             }
+			return front + str + front;
     }
     public static void main (String[] args) {
         String s = frontTwoChars("Kitten");
