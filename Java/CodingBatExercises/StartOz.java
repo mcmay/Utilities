@@ -11,21 +11,24 @@ public class StartOz {
    	String frontTwoChars = str.substring(0, 2);
 	   String front = null;
 	   
-	   String firstChar = Character.(frontTwoChars.charAt(0));
-	   String secondChar = Character.(frontTwoChars.charAt(1));
+	   String firstChar = Character.toString(frontTwoChars.charAt(0));
+	   String secondChar = Character.toString(frontTwoChars.charAt(1));
 	   if (firstChar.equals("o"))
-	       front += firstChar;
+	       front = firstChar;
 		if (secondChar.equals("z"))
-	       front += secondChar;
+			if (firstChar.equals("o"))
+				front = front + secondChar;
+			else
+	       		front = secondChar;
 		return front;
    }
 	public static void main(String args[])
 	{
 		String s = startOz("ozymandias");
 		System.out.println(s);
-      startOz("bzoo");
+      s = startOz("bzoo");
 	   System.out.println(s);
-      startOz("oxx");
+      s = startOz("oxx");
 	   System.out.println(s);
 	}
 
