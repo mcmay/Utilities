@@ -12,10 +12,10 @@ public class EndUp{
 			return str.toUpperCase();
 		}
 		int index = str.length() - 1 - 3;
-		String front = str.substring(0, index);
-		String end3 = str.substring(index, str.length() - 1 - 3);
-		end3 = end3.toUpperCase();
-		return front + end3;
+		String front = str.substring(0, index + 1);
+		String end3 = str.substring(index + 1, str.length());
+		
+		return front + end3.toUpperCase();
 	}
     public static void main(String args[]){
         String s = endUp("Hello");
