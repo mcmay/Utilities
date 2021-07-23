@@ -1,0 +1,2 @@
+Main-Class: PDFFilesMerger
+Class-Path: pdfbox-2.0.19.jar commons-logging-1.2.jar
