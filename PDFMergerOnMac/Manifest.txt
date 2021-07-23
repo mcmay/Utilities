@@ -1,0 +1,2 @@
+Main-Class: PDFFilesMergerOnMac
+Class-Path: ../PDFMerger/pdfbox-2.0.19.jar ../PDFMerger/commons-logging-1.2.jar
