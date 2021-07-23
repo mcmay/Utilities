@@ -1,0 +1,2 @@
+Main-Class: uploader.Uploader
+Class-Path: jsoup-1.13.1.jar
